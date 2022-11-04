@@ -19,8 +19,8 @@
         <label for="validationDefault01" class="form-label">Marca</label>
         <select @bind="@model.Marca" class="form-select" id="validationDefault01">
           <option selected disabled value="">Elegir...</option>
-          @foreach (var Marcalist in Marcalist){
-          <option value=@Marcalist>@Marcalist</option>
+          @foreach (var MarcaList in MarcaList){
+          <option value=@MarcaList>@MarcaList</option>
          }
         </select>
       </div>
@@ -28,9 +28,9 @@
         <label for="validationDefault02" class="form-label">Modelo</label>
         <select @bind="@model.Modelo" class="form-select" id="validationDefault01">
           <option selected disabled value="">Elegir...</option>
-          @foreach (var Modelolist in Modelolist)
+          @foreach (var ModeloList in ModeloList)
           {
-            <option value="@Modelolist">@Modelolist</option>
+            <option value="@ModeloList">@ModeloList</option>
           }
         </select>
       </div>
@@ -42,14 +42,14 @@
         <label for="validationDefault04" class="form-label">Color</label>
         <select @bind="model.Color" class="form-select" id="validationDefault04" required>
           <option selected disabled value="">Elegir...</option>
-          @foreach (var Colorlist in Colorlist)
+          @foreach (var ColorList in ColorList)
           {
-            <option value="@Colorlist">@Colorlist</option>
+            <option value="@ColorList">@ColorList</option>
           }
         </select>
       </div>
       <div class="col-12">
-        <button class='btn btn-primary @(model.vehiculoID==0?"btn-success":"btn-warning")' @onclick="Guardar">Guardar</button>
+        <button class="btn btn-primary">Guardar</button>
       </div>
     </div>
   </div>
@@ -63,7 +63,6 @@
             <th>Modelo</th>
             <th>Año</th>
             <th>Color</th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -75,17 +74,6 @@
                 <td>@vehiculo.Modelo</td>
                 <td>@vehiculo.Año</td>
                 <td>@vehiculo.Color</td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-warning" @onclick="()=>Editar(vehiculo.vehiculoID)">
-
-                            <span class="oi oi-pencil"></span>
-                        </button>
-                        <button class="btn btn-danger" @onclick="()=>Eliminar(vehiculo.vehiculoID)">
-                            <span class="oi oi-trash"></span>
-                        </button>
-                    </div>
-                </td>
             </tr>
         }
     </tbody>
@@ -94,12 +82,12 @@
 
 @code {
 
-  //string[] colorsSelected = new[] { "white", "black" };
+  //string[] MarcaString = new[] { "Toyota", "Nissan" };
 
-  List<string> Marcalist = new List<string>() { "Toyota", "Nissan" };
-  List<string> Modelolist = new List<string>() { "Camry", "Corolla S", "Centra" };
-  List<string> Colorlist = new List<string>() { "Amarillo", "Azul", "Rojo", "Verde" };
-    public List<Vehiculo>? Vehiculos { get; set; }
+  List<string> MarcaList = new List<string>() { "Toyota", "Nissan" };
+  List<string> ModeloList = new List<string>() { "Camry", "Corolla S", "Centra" };
+  List<string> ColorList = new List<string>() { "Amarillo", "Azul", "Rojo", "Verde" };
+    public List<Vehiculo> Vehiculos { get; set; }
     = new List<Vehiculo>(){
 new Vehiculo(){
 vehiculoID = 1,
@@ -115,33 +103,21 @@ Modelo = "Centra",
 Año = 2018,
 Color = "Rojo"
 },
+new Vehiculo(){
+vehiculoID = 3,
+Marca= "Toyota",
+Modelo = "Camry",
+Año = 2019,
+Color = "Azul"
+},
+new Vehiculo(){
+vehiculoID = 4,
+Marca= "Nissan",
+Modelo = "Centra",
+Año = 2020,
+Color = "Amarillo"
+},
     };
-  void Eliminar(int id){
 
-  }
-  void Editar(int id){
-
-  }
-
-    void Guardar()
-    {
-        if (
-        !string.IsNullOrEmpty(model.Modelo) &&
-        !string.IsNullOrEmpty(model.Marca)
-        )
-        {
-            if (model.vehiculoID == 0)
-            {
-                model.vehiculoID = 
-                Vehiculos.Count>0? (Vehiculos!.Max(p => p.vehiculoID) + 1) : 1;
-                Vehiculos!.Add(model);
-                model = new Vehiculo();
-                return;
-            }
-            var indice = Vehiculos!.FindIndex(p => p.vehiculoID == model.vehiculoID);
-            Vehiculos![indice] = model;
-            model = new Vehiculo();
-        }
-    }
 public Vehiculo model { get; set; } = new Vehiculo();
 }
