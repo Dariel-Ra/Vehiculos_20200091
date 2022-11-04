@@ -10,7 +10,7 @@
     </div>
   <div class="container-header"></div>
 </div>
-
+<div class=" mt-1"></div>
 <div class="card">
   <div class="card-header card-header-color">
         <p class=" card-title fs-6 fw-bold text-uppercase fw-normal text-white ">Datos del Vehiculo</p>
@@ -39,11 +39,11 @@
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault03" class="form-label">Año</label>
-        <input @bind="model.Año" type="text" class="form-control" id="validationDefault03" required>
+        <input @bind="@model.Año" type="text" class="form-control" id="validationDefault03" required>
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault04" class="form-label">Color</label>
-        <select @bind="model.Color" class="form-select" id="validationDefault04" required>
+        <select @bind="@model.Color" class="form-select" id="validationDefault04" required>
           <option selected disabled value="">Elegir...</option>
           @foreach (var ColorList in ColorList)
           {
@@ -57,7 +57,7 @@
     </div>
   </div>
 </div>
-
+<div class=" mt-1"></div>
 <table class="table table-striped">
     <thead class="table-dark">
         <tr>
