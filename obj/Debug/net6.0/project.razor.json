@@ -45,39 +45,6 @@
         }
       },
       {
-        "HashCode": 1400427750,
-        "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Pages.FetchData",
-        "AssemblyName": "Vehiculos_20200091",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 1987746719,
-        "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Pages.FetchData",
-        "AssemblyName": "Vehiculos_20200091",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Vehiculos_20200091.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1764023155,
         "Kind": "Components.Component",
         "Name": "Vehiculos_20200091.Pages.Index",
@@ -111,35 +78,35 @@
         }
       },
       {
-        "HashCode": 678330807,
+        "HashCode": 1400427750,
         "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Pages.VehiculosView",
+        "Name": "Vehiculos_20200091.Pages.FetchData",
         "AssemblyName": "Vehiculos_20200091",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "VehiculosView"
+            "TagName": "FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Pages.VehiculosView"
+          "Common.TypeName": "Vehiculos_20200091.Pages.FetchData"
         }
       },
       {
-        "HashCode": 1485499709,
+        "HashCode": 1987746719,
         "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Pages.VehiculosView",
+        "Name": "Vehiculos_20200091.Pages.FetchData",
         "AssemblyName": "Vehiculos_20200091",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Vehiculos_20200091.Pages.VehiculosView"
+            "TagName": "Vehiculos_20200091.Pages.FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Pages.VehiculosView",
+          "Common.TypeName": "Vehiculos_20200091.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
