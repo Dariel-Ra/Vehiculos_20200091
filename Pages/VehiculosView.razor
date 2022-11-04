@@ -97,7 +97,7 @@
                 <td>@vehiculo.vehiculoID</td>
                 <td>@vehiculo.Marca</td>
                 <td>@vehiculo.Modelo</td>
-                <td>@vehiculo.Año.ToString("N2")</td>
+                <td>@vehiculo.Año</td>
                 <td>@vehiculo.Color</td>
                 <td>
                     <div class="btn-group">
@@ -126,24 +126,6 @@
         <input type="checkbox" class="me-2" name="" id="" autocomplete="off"> Choice
     </label>
 </div>
-
-<div class="mb-3">
-  <label for="" class="form-label">Email</label>
-  <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="abc@mail.com">
-  <small id="emailHelpId" class="form-text text-muted">Help text</small>
-</div>
-
-<div class="mb-3">
-  <label for="" class="form-label">Choose file</label>
-  <input type="file" class="form-control" name="" id="" placeholder="" aria-describedby="fileHelpId">
-  <div id="fileHelpId" class="form-text">Help text</div>
-</div>
-
-<div class="col-md-4">
-    <label for="" class="form-label">First name</label>
-    <input type="text" class="form-control" id="" value="" required>
-  </div>
-
 
 @code {
 
