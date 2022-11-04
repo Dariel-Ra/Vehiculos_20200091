@@ -1,5 +1,6 @@
 @page "/vehiculo"
-
+@using Vehiculos_20200091.Data.Models
+@layout MainLayout
 
 <PageTitle>Registro de Vehiculos</PageTitle>
 
@@ -37,39 +38,82 @@
     </div>
   <div class="card-body">
 
-    <form class="row g-3">
+    <div class="row g-3">
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault01" class="form-label">Marca</label>
-        <select class="form-select" id="validationDefault01">
+        <select @bind="@model.Marca" class="form-select" id="validationDefault01">
           <option selected disabled value="">Choose...</option>
-          <option>...</option>
+          @foreach (var Marcalist in Marcalist){
+          <option value=@Marcalist>@Marcalist</option>
+         }
         </select>
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault02" class="form-label">Modelo</label>
-        <select class="form-select" id="validationDefault01">
+        <select @bind="@model.Modelo" class="form-select" id="validationDefault01">
           <option selected disabled value="">Choose...</option>
-          <option>...</option>
+          @foreach (var Modelolist in Modelolist)
+          {
+            <option value="@Modelolist">@Modelolist</option>
+          }
         </select>
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault03" class="form-label">Año</label>
-        <input type="text" class="form-control" id="validationDefault03" required>
+        <input @bind="model.Año" type="text" class="form-control" id="validationDefault03" required>
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault04" class="form-label">Color</label>
-        <select class="form-select" id="validationDefault04" required>
+        <select @bind="model.Color" class="form-select" id="validationDefault04" required>
           <option selected disabled value="">Choose...</option>
-          <option>...</option>
+          @foreach (var Colorlist in Colorlist)
+          {
+            <option value="@Colorlist">@Colorlist</option>
+          }
         </select>
       </div>
       <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class='btn btn-primary @(model.vehiculoID==0?"btn-success":"btn-warning")' @onclick="Guardar">Guardar</button>
       </div>
-    </form>
+    </div>
   </div>
 </div>
 
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Año</th>
+            <th>Color</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vehiculo in Vehiculos)
+        {
+            <tr>
+                <td>@vehiculo.vehiculoID</td>
+                <td>@vehiculo.Marca</td>
+                <td>@vehiculo.Modelo</td>
+                <td>@vehiculo.Año.ToString("N2")</td>
+                <td>@vehiculo.Color</td>
+                <td>
+                    <div class="btn-group">
+                        <button class="btn btn-warning" @onclick="()=>Editar(vehiculo.vehiculoID)">
+
+                            <span class="oi oi-pencil"></span>
+                        </button>
+                        <button class="btn btn-danger" @onclick="()=>Eliminar(vehiculo.vehiculoID)">
+                            <span class="oi oi-trash"></span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
 <br>
 <div class="btn-group" role="group" data-bs-toggle="buttons">
     <label class="btn btn-primary active">
@@ -103,5 +147,54 @@
 
 @code {
 
+  //string[] colorsSelected = new[] { "white", "black" };
 
+  List<string> Marcalist = new List<string>() { "Toyota", "Nissan" };
+  List<string> Modelolist = new List<string>() { "Camry" };
+  List<string> Colorlist = new List<string>() { "Amarillo", "Azul", "Rojo", "Verde" };
+    public List<Vehiculo>? Vehiculos { get; set; }
+    = new List<Vehiculo>(){
+new Vehiculo(){
+vehiculoID = 1,
+Marca= "Pasta dental",
+Modelo = "Higiene Vucal",
+Año = 300,
+Color = "Rojo"
+},
+new Vehiculo(){
+vehiculoID = 2,
+Marca= "Pasta dental",
+Modelo = "Higiene Vucal",
+Año = 300,
+Color = "Rojo"
+},
+    };
+  void Eliminar(int id){
+
+  }
+  void Editar(int id){
+
+  }
+
+    void Guardar()
+    {
+        if (
+        !string.IsNullOrEmpty(model.Modelo) &&
+        !string.IsNullOrEmpty(model.Marca)
+        )
+        {
+            if (model.vehiculoID == 0)
+            {
+                model.vehiculoID = 
+                Vehiculos.Count>0? (Vehiculos!.Max(p => p.vehiculoID) + 1) : 1;
+                Vehiculos!.Add(model);
+                model = new Vehiculo();
+                return;
+            }
+            var indice = Vehiculos!.FindIndex(p => p.vehiculoID == model.vehiculoID);
+            Vehiculos![indice] = model;
+            model = new Vehiculo();
+        }
+    }
+public Vehiculo model { get; set; } = new Vehiculo();
 }

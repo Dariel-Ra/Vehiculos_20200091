@@ -1,4 +1,4 @@
-namespace Data.Models;
+namespace Vehiculos_20200091.Data.Models;
 
 public class Vehiculo
 {
