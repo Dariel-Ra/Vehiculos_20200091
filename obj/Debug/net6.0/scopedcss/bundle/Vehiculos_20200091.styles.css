@@ -9,8 +9,12 @@
 }
 
 .card-header-color[b-m7dgwkf9bz]{
-    background-color: #4b4b4b;
+    background-color: #212529/*#4b4b4b*/;
+    color: #fff;
+    
+    
 }
+
 
 /* _content/Vehiculos_20200091/Shared/MainLayout.razor.rz.scp.css */
 .page[b-gpsht645au] {
