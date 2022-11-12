@@ -1,0 +1,152 @@
+*[b-righhumjyv],
+[b-righhumjyv]::after,
+[b-righhumjyv]::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root[b-righhumjyv]{
+    --clr-asccent-500:#222222;
+    --clr-asccent-900: rgb(0, 0, 0);
+    --clr-primary-100:#ffffff;
+    --clr-primary-400: #d1d1d1;
+    --clr-secondary:#ffc82f;
+    --font-primary:
+}
+body[b-righhumjyv]{
+    background-color: var(--clr-asccent-900);
+    color: var(--clr-primary-400);
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 16px;   
+}
+.main-content-article[b-righhumjyv]{
+    max-width: 60em;
+    margin: 0 auto;
+    
+}
+.container-article[b-righhumjyv]{
+    max-width: 80em;
+    margin: 0 auto;
+    padding-bottom: 7em;
+}
+.column-article[b-righhumjyv]{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+
+}
+.column-article-content[b-righhumjyv]{
+
+    width: 25vw;
+    height: 27vh;
+    justify-self: center;
+    background-color: red;
+}
+.footer-container[b-righhumjyv]{
+    max-width: 87em;
+    justify-self: center;
+    margin: 0 auto;
+}
+.content-footer[b-righhumjyv]{
+    justify-self: center;
+}
+.footer-column-container[b-righhumjyv]{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.menu-footer-item[b-righhumjyv]{
+    list-style: none;
+    
+    font-family: Verdana,BlinkMacSystemFont,-apple-system,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+}
+img[b-righhumjyv]{
+    width: 100%;
+    padding: 0 20px 0 0;
+}
+.image-column[b-righhumjyv]{
+    display: flex;
+}
+a[b-righhumjyv],h3[b-righhumjyv]{
+    color: var(--clr-secondary);
+    text-decoration: none;
+}
+.page[b-righhumjyv] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-righhumjyv] {
+    flex: 1;
+}
+
+.container-header[b-righhumjyv]{
+    padding-bottom: 8em;
+    background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, .35), rgb(255, 255, 255, .45), rgb(255, 255, 255, .35), rgb(255, 255, 255, 1)),url(https://cdn.pixabay.com/photo/2016/11/14/09/23/volkswagen-1822997_960_720.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar[b-righhumjyv] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-righhumjyv] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-righhumjyv]  a, .top-row .btn-link[b-righhumjyv] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-righhumjyv] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-righhumjyv] {
+        display: none;
+    }
+
+    .top-row.auth[b-righhumjyv] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-righhumjyv], .top-row .btn-link[b-righhumjyv] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-righhumjyv] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-righhumjyv] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-righhumjyv] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-righhumjyv], article[b-righhumjyv] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
