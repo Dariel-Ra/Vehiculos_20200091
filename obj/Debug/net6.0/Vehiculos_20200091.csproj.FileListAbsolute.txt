@@ -27,6 +27,5 @@ C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\Vehiculos_20200091.genruntimeco
 C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\ref\Vehiculos_20200091.dll
 C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Pages\VehiculosView.razor.rz.scp.css
 C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Pages\VehiculosViewTest.razor.rz.scp.css
-C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Shared\MainLayoutTest.razor.rz.scp.css
-C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Shared\NavMenuTest.razor.rz.scp.css
-C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Shared\NavMenuTestV2.razor.rz.scp.css
+C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Shared\VehiculosMainLayout.razor.rz.scp.css
+C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Shared\VehiculosNavMenu.razor.rz.scp.css

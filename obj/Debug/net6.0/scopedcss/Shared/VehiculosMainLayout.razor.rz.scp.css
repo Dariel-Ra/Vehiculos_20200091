@@ -1,11 +1,11 @@
-*[b-righhumjyv],
-[b-righhumjyv]::after,
-[b-righhumjyv]::before{
+*[b-qclqk60bxb],
+[b-qclqk60bxb]::after,
+[b-qclqk60bxb]::before{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-:root[b-righhumjyv]{
+:root[b-qclqk60bxb]{
     --clr-asccent-500:#222222;
     --clr-asccent-900: rgb(0, 0, 0);
     --clr-primary-100:#ffffff;
@@ -13,75 +13,74 @@
     --clr-secondary:#ffc82f;
     --font-primary:
 }
-body[b-righhumjyv]{
+body[b-qclqk60bxb]{
     background-color: var(--clr-asccent-900);
     color: var(--clr-primary-400);
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 16px;   
 }
-.main-content-article[b-righhumjyv]{
+.main-content-article[b-qclqk60bxb]{
     max-width: 60em;
     margin: 0 auto;
     
 }
-.container-article[b-righhumjyv]{
+.container-article[b-qclqk60bxb]{
     max-width: 80em;
     margin: 0 auto;
     padding-bottom: 7em;
 }
-.column-article[b-righhumjyv]{
+.column-article[b-qclqk60bxb]{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
 
 }
-.column-article-content[b-righhumjyv]{
-
+.column-article-content[b-qclqk60bxb]{
     width: 25vw;
     height: 27vh;
     justify-self: center;
     background-color: red;
 }
-.footer-container[b-righhumjyv]{
+.footer-container[b-qclqk60bxb]{
     max-width: 87em;
     justify-self: center;
     margin: 0 auto;
 }
-.content-footer[b-righhumjyv]{
+.content-footer[b-qclqk60bxb]{
     justify-self: center;
 }
-.footer-column-container[b-righhumjyv]{
+.footer-column-container[b-qclqk60bxb]{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
 }
-.menu-footer-item[b-righhumjyv]{
+.menu-footer-item[b-qclqk60bxb]{
     list-style: none;
     
     font-family: Verdana,BlinkMacSystemFont,-apple-system,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
-img[b-righhumjyv]{
+img[b-qclqk60bxb]{
     width: 100%;
     padding: 0 20px 0 0;
 }
-.image-column[b-righhumjyv]{
+.image-column[b-qclqk60bxb]{
     display: flex;
 }
-a[b-righhumjyv],h3[b-righhumjyv]{
+a[b-qclqk60bxb],h3[b-qclqk60bxb]{
     color: var(--clr-secondary);
     text-decoration: none;
 }
-.page[b-righhumjyv] {
+.page[b-qclqk60bxb] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main[b-righhumjyv] {
+main[b-qclqk60bxb] {
     flex: 1;
 }
 
-.container-header[b-righhumjyv]{
+.container-header[b-qclqk60bxb]{
     padding-bottom: 8em;
     background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, .35), rgb(255, 255, 255, .45), rgb(255, 255, 255, .35), rgb(255, 255, 255, 1)),url(https://cdn.pixabay.com/photo/2016/11/14/09/23/volkswagen-1822997_960_720.jpg);
 
@@ -90,11 +89,11 @@ main[b-righhumjyv] {
     background-size: cover;
 }
 
-.sidebar[b-righhumjyv] {
+.sidebar[b-qclqk60bxb] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
-.top-row[b-righhumjyv] {
+.top-row[b-qclqk60bxb] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -103,49 +102,49 @@ main[b-righhumjyv] {
     align-items: center;
 }
 
-    .top-row[b-righhumjyv]  a, .top-row .btn-link[b-righhumjyv] {
+    .top-row[b-qclqk60bxb]  a, .top-row .btn-link[b-qclqk60bxb] {
         white-space: nowrap;
         margin-left: 1.5rem;
     }
 
-    .top-row a:first-child[b-righhumjyv] {
+    .top-row a:first-child[b-qclqk60bxb] {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
 @media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-righhumjyv] {
+    .top-row:not(.auth)[b-qclqk60bxb] {
         display: none;
     }
 
-    .top-row.auth[b-righhumjyv] {
+    .top-row.auth[b-qclqk60bxb] {
         justify-content: space-between;
     }
 
-    .top-row a[b-righhumjyv], .top-row .btn-link[b-righhumjyv] {
+    .top-row a[b-qclqk60bxb], .top-row .btn-link[b-qclqk60bxb] {
         margin-left: 0;
     }
 }
 
 @media (min-width: 641px) {
-    .page[b-righhumjyv] {
+    .page[b-qclqk60bxb] {
         flex-direction: row;
     }
 
-    .sidebar[b-righhumjyv] {
+    .sidebar[b-qclqk60bxb] {
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
-    .top-row[b-righhumjyv] {
+    .top-row[b-qclqk60bxb] {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .top-row[b-righhumjyv], article[b-righhumjyv] {
+    .top-row[b-qclqk60bxb], article[b-qclqk60bxb] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }

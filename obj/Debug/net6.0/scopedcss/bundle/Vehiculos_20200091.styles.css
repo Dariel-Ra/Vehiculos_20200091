@@ -26,16 +26,6 @@
     background-size: cover;
 }
 
-
-:root[b-ofcm6puc8x]{
-    --clr-asccent-500:#222222;
-    --clr-asccent-900: rgb(0, 0, 0);
-    --clr-primary-100:#ffffff;
-    --clr-primary-400: #d1d1d1;
-    --clr-secondary:#ffc82f;
-    --font-primary:
-}
-
 .page[b-ofcm6puc8x]{
     padding-bottom: 8em;
     background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, .35), rgb(255, 255, 255, .45), rgb(255, 255, 255, .35), rgb(255, 255, 255, 1)),url(https://cdn.pixabay.com/photo/2016/11/14/09/23/volkswagen-1822997_960_720.jpg);
@@ -124,159 +114,6 @@ main[b-gpsht645au] {
         padding-right: 1.5rem !important;
     }
 }
-/* _content/Vehiculos_20200091/Shared/MainLayoutTest.razor.rz.scp.css */
-*[b-righhumjyv],
-[b-righhumjyv]::after,
-[b-righhumjyv]::before{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-:root[b-righhumjyv]{
-    --clr-asccent-500:#222222;
-    --clr-asccent-900: rgb(0, 0, 0);
-    --clr-primary-100:#ffffff;
-    --clr-primary-400: #d1d1d1;
-    --clr-secondary:#ffc82f;
-    --font-primary:
-}
-body[b-righhumjyv]{
-    background-color: var(--clr-asccent-900);
-    color: var(--clr-primary-400);
-    font-family:  Arial, Helvetica, sans-serif;
-    font-size: 16px;   
-}
-.main-content-article[b-righhumjyv]{
-    max-width: 60em;
-    margin: 0 auto;
-    
-}
-.container-article[b-righhumjyv]{
-    max-width: 80em;
-    margin: 0 auto;
-    padding-bottom: 7em;
-}
-.column-article[b-righhumjyv]{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
-
-}
-.column-article-content[b-righhumjyv]{
-
-    width: 25vw;
-    height: 27vh;
-    justify-self: center;
-    background-color: red;
-}
-.footer-container[b-righhumjyv]{
-    max-width: 87em;
-    justify-self: center;
-    margin: 0 auto;
-}
-.content-footer[b-righhumjyv]{
-    justify-self: center;
-}
-.footer-column-container[b-righhumjyv]{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}
-.menu-footer-item[b-righhumjyv]{
-    list-style: none;
-    
-    font-family: Verdana,BlinkMacSystemFont,-apple-system,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
-}
-img[b-righhumjyv]{
-    width: 100%;
-    padding: 0 20px 0 0;
-}
-.image-column[b-righhumjyv]{
-    display: flex;
-}
-a[b-righhumjyv],h3[b-righhumjyv]{
-    color: var(--clr-secondary);
-    text-decoration: none;
-}
-.page[b-righhumjyv] {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-main[b-righhumjyv] {
-    flex: 1;
-}
-
-.container-header[b-righhumjyv]{
-    padding-bottom: 8em;
-    background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, .35), rgb(255, 255, 255, .45), rgb(255, 255, 255, .35), rgb(255, 255, 255, 1)),url(https://cdn.pixabay.com/photo/2016/11/14/09/23/volkswagen-1822997_960_720.jpg);
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.sidebar[b-righhumjyv] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-}
-
-.top-row[b-righhumjyv] {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-}
-
-    .top-row[b-righhumjyv]  a, .top-row .btn-link[b-righhumjyv] {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-    }
-
-    .top-row a:first-child[b-righhumjyv] {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-righhumjyv] {
-        display: none;
-    }
-
-    .top-row.auth[b-righhumjyv] {
-        justify-content: space-between;
-    }
-
-    .top-row a[b-righhumjyv], .top-row .btn-link[b-righhumjyv] {
-        margin-left: 0;
-    }
-}
-
-@media (min-width: 641px) {
-    .page[b-righhumjyv] {
-        flex-direction: row;
-    }
-
-    .sidebar[b-righhumjyv] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row[b-righhumjyv] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row[b-righhumjyv], article[b-righhumjyv] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
-}
 /* _content/Vehiculos_20200091/Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-zz9qp9140t] {
     background-color: rgba(255, 255, 255, 0.1);
@@ -340,233 +177,15 @@ main[b-righhumjyv] {
         display: block;
     }
 }
-/* _content/Vehiculos_20200091/Shared/NavMenuTest.razor.rz.scp.css */
-*[b-24rdc4kj5j],
-[b-24rdc4kj5j]::after,
-[b-24rdc4kj5j]::before{
+/* _content/Vehiculos_20200091/Shared/VehiculosMainLayout.razor.rz.scp.css */
+*[b-qclqk60bxb],
+[b-qclqk60bxb]::after,
+[b-qclqk60bxb]::before{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-:root[b-24rdc4kj5j]{
-
-}
-body[b-24rdc4kj5j]{
-    background-color: var(--clr-asccent-900);
-    color: var(--clr-primary-400);
-    font-family:  Arial, Helvetica, sans-serif;
-    font-size: 16px;   
-}
-header[b-24rdc4kj5j]{
-    /* padding: -1%;
-    margin: -1%; */
-}
-h1[b-24rdc4kj5j],
-h2[b-24rdc4kj5j],
-h3[b-24rdc4kj5j],
-p[b-24rdc4kj5j],
-img[b-24rdc4kj5j]{
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-}
-ol[b-24rdc4kj5j],
-ul[b-24rdc4kj5j],
-li[b-24rdc4kj5j]{
-    padding: .5rem;
-}
-p[b-24rdc4kj5j]{
-    line-height: 2rem;
-}
-h1[b-24rdc4kj5j],h2[b-24rdc4kj5j],h3[b-24rdc4kj5j]{
-    color: var(--clr-asccent-900);
-}
-
-.container-header[b-24rdc4kj5j]{
-    padding-bottom: 8em;
-    background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, .35), rgb(255, 255, 255, .45), rgb(255, 255, 255, .35), rgb(255, 255, 255, 1)),url(https://cdn.pixabay.com/photo/2016/11/14/09/23/volkswagen-1822997_960_720.jpg);
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.nav-column[b-24rdc4kj5j]{
-    display: grid;
-    grid-template-columns: .4fr 1fr .4fr;
-    max-width: 85em;
-    margin: 0 auto;
-}
-.nav-logo[b-24rdc4kj5j],
-.nav-menu[b-24rdc4kj5j],
-.search-container[b-24rdc4kj5j]{
-    justify-self: center;
-    align-self: center;
-    border: none;
-}
-.search-container[b-24rdc4kj5j]{
-    
-    margin: 0 0 0 0;
-}
-.nav-searchbox[b-24rdc4kj5j], .nav-form[b-24rdc4kj5j], .search-container[b-24rdc4kj5j]{
-    border-radius: 100%;
-}
-.nav-form[b-24rdc4kj5j], input[type=text][b-24rdc4kj5j], button[b-24rdc4kj5j]{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 100px;
-    margin: 0;
-    float: left;
-    font-size: 1rem;
-    border: none;
-    width: max-content;
-    padding: 3px;
-
-}
-.nav-logo[b-24rdc4kj5j]{
-    width: 7rem;
-}
-.nav-menu[b-24rdc4kj5j]{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.03rem;
-    align-items: center;    
-}
-input[b-24rdc4kj5j]{
-    cursor: text;
-}
-button[b-24rdc4kj5j]{
-    background-color: rgb(90, 90, 90);
-}
-
-.nav-menu-item[b-24rdc4kj5j]{
-    padding: 0 1rem 0 0;
-    color: var(---clr-asccent-900);
-}
-.nav-menu-item:hover[b-24rdc4kj5j],
-.nav-menu-item:focus[b-24rdc4kj5j]{
-    color: var(--clr-secondary);
-}
-.main-content-article[b-24rdc4kj5j]{
-    max-width: 60em;
-    margin: 0 auto;
-    
-}
-.container-article[b-24rdc4kj5j]{
-    max-width: 80em;
-    margin: 0 auto;
-    padding-bottom: 7em;
-}
-.column-article[b-24rdc4kj5j]{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
-
-}
-.column-article-content[b-24rdc4kj5j]{
-
-    width: 25vw;
-    height: 27vh;
-    justify-self: center;
-    background-color: red;
-}
-.footer-container[b-24rdc4kj5j]{
-    max-width: 87em;
-    justify-self: center;
-    margin: 0 auto;
-}
-.content-footer[b-24rdc4kj5j]{
-    justify-self: center;
-}
-.footer-column-container[b-24rdc4kj5j]{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}
-.menu-footer-item[b-24rdc4kj5j]{
-    list-style: none;
-    
-    font-family: Verdana,BlinkMacSystemFont,-apple-system,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
-}
-img[b-24rdc4kj5j]{
-    width: 100%;
-    padding: 0 20px 0 0;
-}
-.image-column[b-24rdc4kj5j]{
-    display: flex;
-}
-a[b-24rdc4kj5j],h3[b-24rdc4kj5j]{
-    color: var(--clr-secondary);
-    text-decoration: none;
-}
-
-.navbar-toggler[b-24rdc4kj5j] {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.top-row[b-24rdc4kj5j] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.navbar-brand[b-24rdc4kj5j] {
-    font-size: 1.1rem;
-}
-
-.oi[b-24rdc4kj5j] {
-    width: 2rem;
-    font-size: 1.1rem;
-    vertical-align: text-top;
-    top: -2px;
-}
-
-.nav-item[b-24rdc4kj5j] {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
-}
-
-    .nav-item:first-of-type[b-24rdc4kj5j] {
-        padding-top: 1rem;
-    }
-
-    .nav-item:last-of-type[b-24rdc4kj5j] {
-        padding-bottom: 1rem;
-    }
-
-    .nav-item[b-24rdc4kj5j]  a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-.nav-item[b-24rdc4kj5j]  a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
-}
-
-.nav-item[b-24rdc4kj5j]  a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
-
-@media (min-width: 641px) {
-    .navbar-toggler[b-24rdc4kj5j] {
-        display: none;
-    }
-
-    .collapse[b-24rdc4kj5j] {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-    }
-}
-/* _content/Vehiculos_20200091/Shared/NavMenuTestV2.razor.rz.scp.css */
-*[b-8euatu7agc],
-[b-8euatu7agc]::after,
-[b-8euatu7agc]::before{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-:root[b-8euatu7agc]{
+:root[b-qclqk60bxb]{
     --clr-asccent-500:#222222;
     --clr-asccent-900: rgb(0, 0, 0);
     --clr-primary-100:#ffffff;
@@ -574,62 +193,211 @@ a[b-24rdc4kj5j],h3[b-24rdc4kj5j]{
     --clr-secondary:#ffc82f;
     --font-primary:
 }
-body[b-8euatu7agc]{
+body[b-qclqk60bxb]{
     background-color: var(--clr-asccent-900);
     color: var(--clr-primary-400);
     font-family:  Arial, Helvetica, sans-serif;
     font-size: 16px;   
 }
-header[b-8euatu7agc]{
-    /* padding: -1%;
-    margin: -1%; */
+.main-content-article[b-qclqk60bxb]{
+    max-width: 60em;
+    margin: 0 auto;
+    
 }
-h1[b-8euatu7agc],
-h2[b-8euatu7agc],
-h3[b-8euatu7agc],
-p[b-8euatu7agc],
-img[b-8euatu7agc]{
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+.container-article[b-qclqk60bxb]{
+    max-width: 80em;
+    margin: 0 auto;
+    padding-bottom: 7em;
 }
-ol[b-8euatu7agc],
-ul[b-8euatu7agc],
-li[b-8euatu7agc]{
-    padding: .5rem;
+.column-article[b-qclqk60bxb]{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+
 }
-p[b-8euatu7agc]{
-    line-height: 2rem;
+.column-article-content[b-qclqk60bxb]{
+    width: 25vw;
+    height: 27vh;
+    justify-self: center;
+    background-color: red;
 }
-h1[b-8euatu7agc],h2[b-8euatu7agc],h3[b-8euatu7agc]{
-    color: var(--clr-primary-100);
+.footer-container[b-qclqk60bxb]{
+    max-width: 87em;
+    justify-self: center;
+    margin: 0 auto;
+}
+.content-footer[b-qclqk60bxb]{
+    justify-self: center;
+}
+.footer-column-container[b-qclqk60bxb]{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.menu-footer-item[b-qclqk60bxb]{
+    list-style: none;
+    
+    font-family: Verdana,BlinkMacSystemFont,-apple-system,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+}
+img[b-qclqk60bxb]{
+    width: 100%;
+    padding: 0 20px 0 0;
+}
+.image-column[b-qclqk60bxb]{
+    display: flex;
+}
+a[b-qclqk60bxb],h3[b-qclqk60bxb]{
+    color: var(--clr-secondary);
+    text-decoration: none;
+}
+.page[b-qclqk60bxb] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-.container-header[b-8euatu7agc]{
-    padding-bottom: 16em;
-    background-image: linear-gradient(rgb(0, 0, 0, 1), rgb(0, 0, 0, .45), rgb(0, 0, 0, 1)),url(https://images.autodaily.com.au/2021/08/lotus-evjia-senna-orange-monterey-1.jpeg);
+main[b-qclqk60bxb] {
+    flex: 1;
+}
+
+.container-header[b-qclqk60bxb]{
+    padding-bottom: 8em;
+    background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, .35), rgb(255, 255, 255, .45), rgb(255, 255, 255, .35), rgb(255, 255, 255, 1)),url(https://cdn.pixabay.com/photo/2016/11/14/09/23/volkswagen-1822997_960_720.jpg);
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.nav-column[b-8euatu7agc]{
+
+.sidebar[b-qclqk60bxb] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-qclqk60bxb] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-qclqk60bxb]  a, .top-row .btn-link[b-qclqk60bxb] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-qclqk60bxb] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-qclqk60bxb] {
+        display: none;
+    }
+
+    .top-row.auth[b-qclqk60bxb] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-qclqk60bxb], .top-row .btn-link[b-qclqk60bxb] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-qclqk60bxb] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-qclqk60bxb] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-qclqk60bxb] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-qclqk60bxb], article[b-qclqk60bxb] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/Vehiculos_20200091/Shared/VehiculosNavMenu.razor.rz.scp.css */
+*[b-iweq8sb24z],
+[b-iweq8sb24z]::after,
+[b-iweq8sb24z]::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root[b-iweq8sb24z]{
+}
+body[b-iweq8sb24z]{
+    background-color: var(--clr-asccent-900);
+    color: var(--clr-primary-400);
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 16px;   
+}
+header[b-iweq8sb24z]{
+    /* padding: -1%;
+    margin: -1%; */
+}
+h1[b-iweq8sb24z],
+h2[b-iweq8sb24z],
+h3[b-iweq8sb24z],
+p[b-iweq8sb24z],
+img[b-iweq8sb24z]{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+ol[b-iweq8sb24z],
+ul[b-iweq8sb24z],
+li[b-iweq8sb24z]{
+    padding: .5rem;
+}
+p[b-iweq8sb24z]{
+    line-height: 2rem;
+}
+h1[b-iweq8sb24z],h2[b-iweq8sb24z],h3[b-iweq8sb24z]{
+    color: var(--clr-asccent-900);
+}
+
+.container-header[b-iweq8sb24z]{
+    padding-bottom: 8em;
+    background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, .35), rgb(255, 255, 255, .45), rgb(255, 255, 255, .35), rgb(255, 255, 255, 1)),url(https://cdn.pixabay.com/photo/2016/11/14/09/23/volkswagen-1822997_960_720.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-column[b-iweq8sb24z]{
     display: grid;
     grid-template-columns: .4fr 1fr .4fr;
     max-width: 85em;
     margin: 0 auto;
 }
-.nav-logo[b-8euatu7agc],
-.nav-menu[b-8euatu7agc],
-.search-container[b-8euatu7agc]{
+.nav-logo[b-iweq8sb24z],
+.nav-menu[b-iweq8sb24z],
+.search-container[b-iweq8sb24z]{
     justify-self: center;
     align-self: center;
     border: none;
 }
-.search-container[b-8euatu7agc]{
-    
+.search-container[b-iweq8sb24z]{
+
     margin: 0 0 0 0;
 }
-.nav-form[b-8euatu7agc], input[type=text][b-8euatu7agc], button[b-8euatu7agc]{
+.nav-searchbox[b-iweq8sb24z], .nav-form[b-iweq8sb24z], .search-container[b-iweq8sb24z]{
+    border-radius: 100%;
+}
+.nav-form[b-iweq8sb24z], input[type=text][b-iweq8sb24z], button[b-iweq8sb24z]{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 100px;
     margin: 0;
@@ -640,116 +408,116 @@ h1[b-8euatu7agc],h2[b-8euatu7agc],h3[b-8euatu7agc]{
     padding: 3px;
 
 }
-.nav-logo[b-8euatu7agc]{
+.nav-logo[b-iweq8sb24z]{
     width: 7rem;
 }
-.nav-menu[b-8euatu7agc]{
+.nav-menu[b-iweq8sb24z]{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.03rem;
     align-items: center;    
 }
-input[b-8euatu7agc]{
+input[b-iweq8sb24z]{
     cursor: text;
 }
-button[b-8euatu7agc]{
+button[b-iweq8sb24z]{
     background-color: rgb(90, 90, 90);
 }
 
-.nav-menu-item[b-8euatu7agc]{
+.nav-menu-item[b-iweq8sb24z]{
     padding: 0 1rem 0 0;
-    color: var(--clr-primary-100);
+    color: var(---clr-asccent-900);
 }
-.nav-menu-item:hover[b-8euatu7agc],
-.nav-menu-item:focus[b-8euatu7agc]{
+.nav-menu-item:hover[b-iweq8sb24z],
+.nav-menu-item:focus[b-iweq8sb24z]{
     color: var(--clr-secondary);
 }
-.main-content-article[b-8euatu7agc]{
+.main-content-article[b-iweq8sb24z]{
     max-width: 60em;
     margin: 0 auto;
     
 }
-.container-article[b-8euatu7agc]{
+.container-article[b-iweq8sb24z]{
     max-width: 80em;
     margin: 0 auto;
     padding-bottom: 7em;
 }
-.column-article[b-8euatu7agc]{
+.column-article[b-iweq8sb24z]{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
 
 }
-.column-article-content[b-8euatu7agc]{
+.column-article-content[b-iweq8sb24z]{
 
     width: 25vw;
     height: 27vh;
     justify-self: center;
     background-color: red;
 }
-.footer-container[b-8euatu7agc]{
+.footer-container[b-iweq8sb24z]{
     max-width: 87em;
     justify-self: center;
     margin: 0 auto;
 }
-.content-footer[b-8euatu7agc]{
+.content-footer[b-iweq8sb24z]{
     justify-self: center;
 }
-.footer-column-container[b-8euatu7agc]{
+.footer-column-container[b-iweq8sb24z]{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
 }
-.menu-footer-item[b-8euatu7agc]{
+.menu-footer-item[b-iweq8sb24z]{
     list-style: none;
     
     font-family: Verdana,BlinkMacSystemFont,-apple-system,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
 }
-img[b-8euatu7agc]{
+img[b-iweq8sb24z]{
     width: 100%;
     padding: 0 20px 0 0;
 }
-.image-column[b-8euatu7agc]{
+.image-column[b-iweq8sb24z]{
     display: flex;
 }
-a[b-8euatu7agc],h3[b-8euatu7agc]{
+a[b-iweq8sb24z],h3[b-iweq8sb24z]{
     color: var(--clr-secondary);
     text-decoration: none;
 }
 
-.navbar-toggler[b-8euatu7agc] {
+.navbar-toggler[b-iweq8sb24z] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.top-row[b-8euatu7agc] {
+.top-row[b-iweq8sb24z] {
     height: 3.5rem;
     background-color: rgba(0,0,0,0.4);
 }
 
-.navbar-brand[b-8euatu7agc] {
+.navbar-brand[b-iweq8sb24z] {
     font-size: 1.1rem;
 }
 
-.oi[b-8euatu7agc] {
+.oi[b-iweq8sb24z] {
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
 }
 
-.nav-item[b-8euatu7agc] {
+.nav-item[b-iweq8sb24z] {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-8euatu7agc] {
+    .nav-item:first-of-type[b-iweq8sb24z] {
         padding-top: 1rem;
     }
 
-    .nav-item:last-of-type[b-8euatu7agc] {
+    .nav-item:last-of-type[b-iweq8sb24z] {
         padding-bottom: 1rem;
     }
 
-    .nav-item[b-8euatu7agc]  a {
+    .nav-item[b-iweq8sb24z]  a {
         color: #d7d7d7;
         border-radius: 4px;
         height: 3rem;
@@ -758,22 +526,22 @@ a[b-8euatu7agc],h3[b-8euatu7agc]{
         line-height: 3rem;
     }
 
-.nav-item[b-8euatu7agc]  a.active {
+.nav-item[b-iweq8sb24z]  a.active {
     background-color: rgba(255,255,255,0.25);
     color: white;
 }
 
-.nav-item[b-8euatu7agc]  a:hover {
+.nav-item[b-iweq8sb24z]  a:hover {
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
 
 @media (min-width: 641px) {
-    .navbar-toggler[b-8euatu7agc] {
+    .navbar-toggler[b-iweq8sb24z] {
         display: none;
     }
 
-    .collapse[b-8euatu7agc] {
+    .collapse[b-iweq8sb24z] {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
