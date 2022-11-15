@@ -385,7 +385,8 @@ h1[b-iweq8sb24z],h2[b-iweq8sb24z],h3[b-iweq8sb24z]{
 }
 .nav-logo[b-iweq8sb24z],
 .nav-menu[b-iweq8sb24z],
-.search-container[b-iweq8sb24z]{
+.search-container[b-iweq8sb24z],
+.nav-logo-shadow[b-iweq8sb24z]{
     justify-self: center;
     align-self: center;
     border: none;
@@ -409,7 +410,11 @@ h1[b-iweq8sb24z],h2[b-iweq8sb24z],h3[b-iweq8sb24z]{
 
 }
 .nav-logo[b-iweq8sb24z]{
-    width: 7rem;
+    width: 10rem;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+.nav-logo-shadow[b-iweq8sb24z]{
+    filter: drop-shadow(0 0 0.75rem black)
 }
 .nav-menu[b-iweq8sb24z]{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

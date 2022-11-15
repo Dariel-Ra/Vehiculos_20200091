@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PbBxQZzzxqihh9dfCtqRijMok1zMEfYO9Zw/H+Bh4FU=",
+  "Hash": "/HjB7JZFo+wMR+VsWVDJzGP030tAkYHe827n3ljg6OA=",
   "Source": "Vehiculos_20200091",
   "BasePath": "_content/Vehiculos_20200091",
   "Mode": "Default",
@@ -323,12 +323,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Identity": "C:\\2020-0091\\Vehiculos_20200091\\wwwroot\\lib\\favicon.png",
+      "Identity": "C:\\2020-0091\\Vehiculos_20200091\\wwwroot\\lib\\img\\logo-super-carros.png",
       "SourceId": "Vehiculos_20200091",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\2020-0091\\Vehiculos_20200091\\wwwroot\\",
       "BasePath": "_content/Vehiculos_20200091",
-      "RelativePath": "lib/favicon.png",
+      "RelativePath": "lib/img/logo-super-carros.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -337,7 +337,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\favicon.png"
+      "OriginalItemSpec": "wwwroot\\lib\\img\\logo-super-carros.png"
     }
   ]
 }

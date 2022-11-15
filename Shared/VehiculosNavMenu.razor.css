@@ -53,7 +53,8 @@ h1,h2,h3{
 }
 .nav-logo,
 .nav-menu,
-.search-container{
+.search-container,
+.nav-logo-shadow{
     justify-self: center;
     align-self: center;
     border: none;
@@ -77,7 +78,11 @@ h1,h2,h3{
 
 }
 .nav-logo{
-    width: 7rem;
+    width: 10rem;
+    filter: drop-shadow(1px 1px 1px #000000);
+}
+.nav-logo-shadow{
+    filter: drop-shadow(0 0 0.75rem black)
 }
 .nav-menu{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
