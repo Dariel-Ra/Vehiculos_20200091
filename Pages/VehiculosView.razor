@@ -85,12 +85,12 @@
 
 @code {
 
-  //string[] MarcaString = new[] { "Toyota", "Nissan" };
+  //string[] MarcaString = new string[] { "Toyota", "Nissan" };
 
   List<string> MarcaList = new List<string>() { "Toyota", "Nissan" };
   List<string> ModeloList = new List<string>() { "Camry", "Corolla S", "Centra" };
   List<string> ColorList = new List<string>() { "Amarillo", "Azul", "Rojo", "Verde" };
-    public List<Vehiculo> Vehiculos { get; set; }
+/*    public List<Vehiculo> Vehiculos { get; set; }
     = new List<Vehiculo>(){
 new Vehiculo(){
 vehiculoID = 1,
@@ -120,7 +120,10 @@ Modelo = "Centra",
 Año = 2020,
 Color = "Amarillo"
 },
-    };
+    };*/
+
+    public List<Vehiculo>? Vehiculos { get; set; }
+    = new List<Vehiculo>();
 
 public Vehiculo model { get; set; } = new Vehiculo();
 }
