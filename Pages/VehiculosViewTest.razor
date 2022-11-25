@@ -3,7 +3,7 @@
 @layout VehiculosMainLayout
 
 <PageTitle>Registro de Vehiculos</PageTitle>
-
+@*
 <div class="header">
     <div class="text-center header-text">
       <p class="fw-bold header-text fs-4">Registro de Vehiculos</p>
@@ -40,7 +40,7 @@
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault03" class="form-label">Año</label>
-        <input @bind="@model.Año" type="text" class="form-control" id="validationDefault03" required>
+        <input @bind="@model.AñoId" type="text" class="form-control" id="validationDefault03" required>
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault04" class="form-label">Color</label>
@@ -76,7 +76,7 @@
                 <td>@vehiculo.vehiculoID</td>
                 <td>@vehiculo.Marca</td>
                 <td>@vehiculo.Modelo</td>
-                <td>@vehiculo.Año</td>
+                <td>@vehiculo.AñoId</td>
                 <td>@vehiculo.Color</td>
             </tr>
         }
@@ -97,31 +97,32 @@ new Vehiculo(){
 vehiculoID = 1,
 Marca= "Toyota",
 Modelo = "Corolla S",
-Año = 2017,
+AñoId = 2017,
 Color = "Azul"
 },
 new Vehiculo(){
 vehiculoID = 2,
 Marca= "Nissan",
 Modelo = "Centra",
-Año = 2018,
+AñoId = 2018,
 Color = "Rojo"
 },
 new Vehiculo(){
 vehiculoID = 3,
 Marca= "Toyota",
 Modelo = "Camry",
-Año = 2019,
+AñoId = 2019,
 Color = "Azul"
 },
 new Vehiculo(){
 vehiculoID = 4,
 Marca= "Nissan",
 Modelo = "Centra",
-Año = 2020,
+AñoId = 2020,
 Color = "Amarillo"
 },
     };
 
 public Vehiculo model { get; set; } = new Vehiculo();
 }
+*@

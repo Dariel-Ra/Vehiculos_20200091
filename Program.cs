@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Vehiculos_20200091.Data;
 using Vehiculos_20200091.Data.Context;
+using Vehiculos_20200091.Data.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

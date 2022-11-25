@@ -10,12 +10,19 @@ public class Vehiculos_20200091DbContext:DbContext,IVehiculos_20200091DbContext
         
     }
     public virtual DbSet<Vehiculo> Vehiculos {get; set;} = null!;
-
+    
+    public override int SaveChanges()
+    {
+        return base.SaveChanges();
+    }
+    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        return base.SaveChangesAsync(cancellationToken);
+    }
 }
 
 public interface IVehiculos_20200091DbContext
 {
-
     public int SaveChanges();
     public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }
