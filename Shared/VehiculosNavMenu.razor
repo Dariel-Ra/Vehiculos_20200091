@@ -9,6 +9,7 @@
     
 }
 </style>
+
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">Vehiculos_20200091</a>
@@ -18,32 +19,28 @@
     </div>
 </div>
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <header class="container-header">
-        <div class="nav-column ">
-            <div class="nav-logo-shadow"><img  class="nav-logo" src="/lib//img/logo-super-carros.png" alt=""></div>
-            <nav class="nav-menu collapse navbar-collapse">
-                <NavLink>
-                    <a href="" class="nav-menu-item">Home</a>
-                </NavLink>
-                
-                <a href="counter" class="nav-menu-item">Counter</a>
-                <a href="fetchdata" class="nav-menu-item">Fetch data</a>
-                <a href="vehiculo" class="nav-menu-item">Vehiculo</a>
-                <a href="vehiculotest" class="nav-menu-item">VehiculosTest</a>
-                <a href="#" class="nav-menu-item">Reviews</a>
-                <a href="#" class="nav-menu-item">Features</a>
-            </nav>
-            <div class="search-container">
-                <div class="nav-searchbox">
-                    <form class="nav-form" action="">
-                    <!-- <form action="/action_page.php"> -->
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
         </div>
-    </header>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="vehiculo">
+                <span class="oi bi-car-front-fill"  aria-hidden="true"></span> Registro de Vehiculos
+            </NavLink>
+        </div>
+    </nav>
 </div>
 
 @code {

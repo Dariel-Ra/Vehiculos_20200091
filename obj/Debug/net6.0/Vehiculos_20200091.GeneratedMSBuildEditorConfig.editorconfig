@@ -39,6 +39,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/2020-0091/Vehiculos_20200091/Backup/VehiculosMainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = QmFja3VwXFZlaGljdWxvc01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4mqm3wg3xw
+
+[C:/2020-0091/Vehiculos_20200091/Backup/VehiculosNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = QmFja3VwXFZlaGljdWxvc05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-wtw5wz6ej6
+
 [C:/2020-0091/Vehiculos_20200091/Pages/VehiculosView.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9zVmlldy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-m7dgwkf9bz
@@ -46,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope = b-m7dgwkf9bz
 [C:/2020-0091/Vehiculos_20200091/Pages/VehiculosViewTest.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9zVmlld1Rlc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ofcm6puc8x
+
+[C:/2020-0091/Vehiculos_20200091/Pages/VehiculosViewTestVA.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9zVmlld1Rlc3RWQS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-51710z2w87
 
 [C:/2020-0091/Vehiculos_20200091/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

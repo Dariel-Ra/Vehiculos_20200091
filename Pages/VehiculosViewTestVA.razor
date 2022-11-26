@@ -1,0 +1,129 @@
+@page "/vehiculotestva"
+@using Vehiculos_20200091.Data.Models
+@layout VehiculosMainLayout
+
+<PageTitle>Registro de Vehiculos</PageTitle>
+
+<div class="header">
+    <div class="text-center header-text">
+      <p class="fw-bold header-text fs-4">Registro de Vehiculos</p>
+    </div>
+  <div class="container-header"></div>
+</div>
+<div class=" mt-1"></div>
+<div class="card">
+  <div class="card-header card-header-color">
+        <p class=" card-title fs-6 fw-bold text-uppercase fw-normal text-white ">Datos del Vehiculo</p>
+    </div>
+  <div class="card-body">
+
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-6">
+        <label for="validationDefault01" class="form-label">Marca</label>
+        <select @bind="@model.MarcaId" class="form-select" id="validationDefault01">
+          <option selected disabled value="">Elegir...</option>
+          @foreach (var MarcaList in MarcaList){
+          <option value=@MarcaList>@MarcaList</option>
+         }
+        </select>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <label for="validationDefault02" class="form-label">Modelo</label>
+        <select @bind="@model.ModeloId" class="form-select" id="validationDefault01">
+          <option selected disabled value="">Elegir...</option>
+          @foreach (var ModeloList in ModeloList)
+          {
+            <option value="@ModeloList">@ModeloList</option>
+          }
+        </select>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <label for="validationDefault03" class="form-label">Año</label>
+        <input @bind="@model.AñoId" type="text" class="form-control" id="validationDefault03" required>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <label for="validationDefault04" class="form-label">Color</label>
+        <select @bind="@model.Color" class="form-select" id="validationDefault04" required>
+          <option selected disabled value="">Elegir...</option>
+          @foreach (var ColorList in ColorList)
+          {
+            <option value="@ColorList">@ColorList</option>
+          }
+        </select>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=" mt-1"></div>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Año</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>@*
+        @foreach (var vehiculo in Vehiculos)
+        {
+            <tr>
+                <td>@vehiculo.vehiculoID</td>
+                <td>@vehiculo.Marca</td>
+                <td>@vehiculo.Modelo</td>
+                <td>@vehiculo.AñoId</td>
+                <td>@vehiculo.Color</td>
+            </tr>
+        }*@
+    </tbody>
+</table>
+<br>
+
+@code {
+
+  //string[] MarcaString = new string[] { "Toyota", "Nissan" };
+
+  List<string> MarcaList = new List<string>() { "Toyota", "Nissan" };
+  List<string> ModeloList = new List<string>() { "Camry", "Corolla S", "Centra" };
+  List<string> ColorList = new List<string>() { "Amarillo", "Azul", "Rojo", "Verde" };
+@*    public List<Vehiculo> Vehiculos { get; set; }
+    = new List<Vehiculo>(){
+new Vehiculo(){
+vehiculoID = 1,
+Marca= "Toyota",
+Modelo = "Corolla S",
+AñoId = 2017,
+Color = "Azul"
+},
+new Vehiculo(){
+vehiculoID = 2,
+Marca= "Nissan",
+Modelo = "Centra",
+AñoId = 2018,
+Color = "Rojo"
+},
+new Vehiculo(){
+vehiculoID = 3,
+Marca= "Toyota",
+Modelo = "Camry",
+AñoId = 2019,
+Color = "Azul"
+},
+new Vehiculo(){
+vehiculoID = 4,
+Marca= "Nissan",
+Modelo = "Centra",
+AñoId = 2020,
+Color = "Amarillo"
+},
+    };
+
+    /*public List<Vehiculo>? Vehiculos { get; set; }
+    = new List<Vehiculo>();*/
+*@
+public Vehiculo model { get; set; } = new Vehiculo();
+}

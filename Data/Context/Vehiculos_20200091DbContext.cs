@@ -10,6 +10,9 @@ public class Vehiculos_20200091DbContext:DbContext,IVehiculos_20200091DbContext
         
     }
     public virtual DbSet<Vehiculo> Vehiculos {get; set;} = null!;
+    public virtual DbSet<VehiculoAño> VehiculosAños {get; set;} = null!;
+    public virtual DbSet<VehiculoMarca> VehiculoMarcas {get; set;} = null!;
+    public virtual DbSet<VehiculoModelo> VehiculoModelos {get; set;} = null!;
     
     public override int SaveChanges()
     {
@@ -23,6 +26,10 @@ public class Vehiculos_20200091DbContext:DbContext,IVehiculos_20200091DbContext
 
 public interface IVehiculos_20200091DbContext
 {
+    public DbSet<Vehiculo> Vehiculos {get; set;}
+    public DbSet<VehiculoAño> VehiculosAños {get; set;}
+    public DbSet<VehiculoMarca> VehiculoMarcas {get; set;}
+    public DbSet<VehiculoModelo> VehiculoModelos {get; set;}
     public int SaveChanges();
     public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }
