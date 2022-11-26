@@ -10,7 +10,7 @@ public class Vehiculo
     public int ModeloId { get; set; }
     public VehiculoModelo? Modelo { get; set; }
     public int AñoId { get; set; }
-    public virtual VehiculoAño? Año { get; set; }
+    public virtual VehiculoAño? Año { get; set; } = null!;
     public string? Color { get; set; }
 
     public static Vehiculo Crear(int marcaId, int modeloId, int añoId, string color) => new Vehiculo()

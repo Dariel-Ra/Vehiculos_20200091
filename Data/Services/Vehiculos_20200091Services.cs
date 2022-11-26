@@ -33,7 +33,7 @@ public class Vehiculos_20200091Service : IVehiculos_20200091Service
         {
             
             var vehiculo = await _context.Vehiculos
-            .Where(p=>p.Color.Contains(filtro))
+            .Where(p=>p.vehiculoID.ToString().Contains(filtro))
             .ToListAsync();
             
             return Result<List<Vehiculo>>.Success(vehiculo);
