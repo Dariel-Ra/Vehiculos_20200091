@@ -22,8 +22,8 @@
         <label for="validationDefault01" class="form-label">Marca</label>
         <select @bind="@model.MarcaId" class="form-select" id="validationDefault01">
           <option selected disabled value="">Elegir...</option>
-          @foreach (var MarcaList in MarcaList){
-          <option value=@MarcaList>@MarcaList</option>
+          @foreach (var marca in Marcas){
+          <option value="@marca.MarcaId">@marca.Marca</option>
          }
         </select>
       </div>
@@ -31,15 +31,21 @@
         <label for="validationDefault02" class="form-label">Modelo</label>
         <select @bind="@model.ModeloId" class="form-select" id="validationDefault01">
           <option selected disabled value="">Elegir...</option>
-          @foreach (var ModeloList in ModeloList)
+          @foreach (var modelo in Modelos)
           {
-            <option value="@ModeloList">@ModeloList</option>
+            <option value="@modelo.ModeloId">@modelo.Modelo</option>
           }
         </select>
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault03" class="form-label">Año</label>
-        <input @bind="@model.AñoId" type="text" class="form-control" id="validationDefault03" required>
+          <select @bind="@model.Año" class="form-select" id="validationDefault03" required>
+          <option selected disabled value="">Elegir...</option>
+          @foreach (var ColorList in ColorList)
+          {
+            <option value="@ColorList">@ColorList</option>
+          }
+        </select>
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault04" class="form-label">Color</label>
@@ -85,10 +91,18 @@
 
 @code {
 
+        protected override async Task OnInitializedAsync()
+        {
+          Marcas = await MarcaService.Consultar();
+          Modelos = await ModeloServices.Consultar();
+        }
+        
+  
   //string[] MarcaString = new string[] { "Toyota", "Nissan" };
+  //List<string> ModeloList = new List<string>() { "Camry", "Corolla S", "Centra" };
 
-  List<string> MarcaList = new List<string>() { "Toyota", "Nissan" };
-  List<string> ModeloList = new List<string>() { "Camry", "Corolla S", "Centra" };
+  List<VehiculoMarca> Marcas = new List<VehiculoMarca>();
+  List<VehiculoModelo> Modelos = new List<VehiculoModelo>();
   List<string> ColorList = new List<string>() { "Amarillo", "Azul", "Rojo", "Verde" };
 @*    public List<Vehiculo> Vehiculos { get; set; }
     = new List<Vehiculo>(){
@@ -127,3 +141,9 @@ Color = "Amarillo"
 *@
 public Vehiculo model { get; set; } = new Vehiculo();
 }
+
+#pragma warning restore 1998
+#nullable restore
+#line 92 "c:/2020-0091/Vehiculos_20200091/Pages/VehiculosView.razor"
+
+

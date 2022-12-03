@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Vehiculos_20200091.Data.Services;
 
-public class Vehiculos_20200091Service : IVehiculos_20200091Service
+public class VehiculosServices : IVehiculosServices
 {
-    private readonly IVehiculos_20200091DbContext _context;
+    private readonly IVehiculosDbContext _context;
 
-    public Vehiculos_20200091Service(IVehiculos_20200091DbContext context)
+    public VehiculosServices(IVehiculosDbContext context)
     {
         _context = context;
     }
@@ -62,7 +62,7 @@ public class Vehiculos_20200091Service : IVehiculos_20200091Service
     }
 }
 
-public interface IVehiculos_20200091Service
+public interface IVehiculosServices
 {
     public Task<Result<int>> Crear(int marcaId, int modeloId, int añoId, string color);
     public Task<Result<List<Vehiculo>>> Consultar(string filtro = "");

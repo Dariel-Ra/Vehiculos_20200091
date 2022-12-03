@@ -3,14 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Vehiculos_20200091.Data.Context;
 
-public class Vehiculos_20200091DbContext:DbContext,IVehiculos_20200091DbContext
+public class VehiculosDbContext:DbContext,IVehiculosDbContext
 {
-    public Vehiculos_20200091DbContext(DbContextOptions options):base(options)
+    public VehiculosDbContext(DbContextOptions options):base(options)
     {
         
     }
     public virtual DbSet<Vehiculo> Vehiculos {get; set;} = null!;
-    public virtual DbSet<VehiculoAño> VehiculosAños {get; set;} = null!;
     public virtual DbSet<VehiculoMarca> VehiculoMarcas {get; set;} = null!;
     public virtual DbSet<VehiculoModelo> VehiculoModelos {get; set;} = null!;
     
@@ -24,10 +23,9 @@ public class Vehiculos_20200091DbContext:DbContext,IVehiculos_20200091DbContext
     }
 }
 
-public interface IVehiculos_20200091DbContext
+public interface IVehiculosDbContext
 {
     public DbSet<Vehiculo> Vehiculos {get; set;}
-    public DbSet<VehiculoAño> VehiculosAños {get; set;}
     public DbSet<VehiculoMarca> VehiculoMarcas {get; set;}
     public DbSet<VehiculoModelo> VehiculoModelos {get; set;}
     public int SaveChanges();

@@ -1,5 +1,6 @@
 @page "/vehiculotestva"
 @using Vehiculos_20200091.Data.Models
+@using Vehiculos_20200091.Data.Services
 @layout VehiculosMainLayout
 
 <PageTitle>Registro de Vehiculos</PageTitle>
@@ -13,8 +14,8 @@
 <div class=" mt-1"></div>
 <div class="card">
   <div class="card-header card-header-color">
-        <p class=" card-title fs-6 fw-bold text-uppercase fw-normal text-white ">Datos del Vehiculo</p>
-    </div>
+    <p class=" card-title fs-6 fw-bold text-uppercase fw-normal text-white ">Datos del Vehiculo</p>
+  </div>
   <div class="card-body">
 
     <div class="row g-3">
@@ -29,7 +30,7 @@
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault02" class="form-label">Modelo</label>
-        <select @bind="@model.ModeloId" class="form-select" id="validationDefault01">
+        <select @bind="model.ModeloId" class="form-select" id="validationDefault01">
           <option selected disabled value="">Elegir...</option>
           @foreach (var ModeloList in ModeloList)
           {
@@ -39,7 +40,11 @@
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault03" class="form-label">Año</label>
-        <input @bind="@model.AñoId" type="text" class="form-control" id="validationDefault03" required>
+        <input @bind="@model.Año" type="text" class="form-control" id="validationDefault03" required>
+          @foreach (var ColorList in ColorList)
+          {
+            <option value="@ColorList">@ColorList</option>
+          }
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault04" class="form-label">Color</label>
@@ -75,7 +80,7 @@
                 <td>@vehiculo.vehiculoID</td>
                 <td>@vehiculo.Marca</td>
                 <td>@vehiculo.Modelo</td>
-                <td>@vehiculo.AñoId</td>
+                <td>@vehiculo.AñoId!</td>
                 <td>@vehiculo.Color</td>
             </tr>
         }*@
@@ -90,6 +95,9 @@
   List<string> MarcaList = new List<string>() { "Toyota", "Nissan" };
   List<string> ModeloList = new List<string>() { "Camry", "Corolla S", "Centra" };
   List<string> ColorList = new List<string>() { "Amarillo", "Azul", "Rojo", "Verde" };
+
+  public List<Vehiculo>? Vehiculos { get; set; }
+    = new List<Vehiculo>();
 @*    public List<Vehiculo> Vehiculos { get; set; }
     = new List<Vehiculo>(){
 new Vehiculo(){

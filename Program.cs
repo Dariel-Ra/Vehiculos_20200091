@@ -10,9 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddSqlite<Vehiculos_20200091DbContext>("Data Source=.//Data//Context//MyDb.sqlite");
-builder.Services.AddScoped<IVehiculos_20200091DbContext,Vehiculos_20200091DbContext>();
-builder.Services.AddScoped<IVehiculos_20200091Service,Vehiculos_20200091Service>();
+builder.Services.AddSqlite<VehiculosDbContext>("Data Source=.//Data//Context//MyDb.sqlite");
+builder.Services.AddScoped<IVehiculosDbContext,VehiculosDbContext>();
+builder.Services.AddScoped<IVehiculosServices,VehiculosServices>();
+builder.Services.AddScoped<IMarcaService,MarcaService>();
+builder.Services.AddScoped<IModeloServices,ModeloServices>();
 
 
 var app = builder.Build();
@@ -37,12 +39,12 @@ app.MapFallbackToPage("/_Host");
 var scopeFactory = app.Services.GetRequiredService<IServiceScopeFactory>();
 using (var scope = scopeFactory.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<Vehiculos_20200091DbContext>();
+    var db = scope.ServiceProvider.GetRequiredService<VehiculosDbContext>();
     if (db.Database.EnsureCreated())
     {
        
     }
-    Vehiculos_20200091Seeder.Inicializar(db);
+    VehiculosSeeder.Inicializar(db);
 }
 
 app.Run();
