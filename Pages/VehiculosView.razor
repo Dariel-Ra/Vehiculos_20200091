@@ -79,8 +79,8 @@
         {
             <tr>
                 <td>@vehiculo.vehiculoID</td>
-                <td>@vehiculo.MarcaId</td>
-                <td>@vehiculo.ModeloId</td>
+                <td>@vehiculo.Marca!.Marca</td>
+                <td>@vehiculo.Modelo!.Modelo</td>
                 <td>@vehiculo.Año</td>
                 <td>@vehiculo.Color</td>
             </tr>
@@ -88,7 +88,7 @@
     </tbody>
 </table>
 <br>
-
+a
 @code {
 
   List<VehiculoMarca> Marcas = new List<VehiculoMarca>();
@@ -107,14 +107,14 @@
     else Console.WriteLine(vehiculo.Message);
   }
 
-  public async Task<bool> Consultar()
+  public async Task Consultar()
   {
-    //var r = await VehiculosServices.Consultar(Filtro);
-    //if(r.Succeeded) Vehiculos = r.Data;
-    var response = await VehiculosServices.Consultar(Filtro);
-    if (response.Succeeded)
-      Vehiculos = response.Data!;
-    return true;
+    var r = await VehiculosServices.Consultar(Filtro);
+    if(r.Succeeded) Vehiculos = r.Data;
+//    var response = await VehiculosServices.Consultar(Filtro);
+//    if (response.Succeeded)
+//      Vehiculos = response.Data!;
+//    return true;
   }
   protected override async Task OnInitializedAsync()
   {

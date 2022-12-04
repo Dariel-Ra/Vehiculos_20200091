@@ -6,7 +6,7 @@ namespace Vehiculos_20200091.Data.Services;
 
 public interface IVehiculosServices
 {
-    Task<Result<List<Vehiculo>>> Consultar(string filtro = "");
+    Task<Result<List<Vehiculo>>> Consultar(string filtro);
     Task<Result<List<VehiculoMarca>>> GetVehiculosMarcas();
     Task<Result<List<VehiculoModelo>>> GetVehiculosModelo();
     Task<Result<int>> Registrar(Vehiculo datos);
@@ -37,14 +37,13 @@ public class VehiculosServices : IVehiculosServices
         }
     }
 
-    public async Task<Result<List<Vehiculo>>> Consultar(string filtro = "")
+    public async Task<Result<List<Vehiculo>>> Consultar(string filtro)
     {
         try
         {
             //Se consulta en la base de datos segun el nombre del contacto y el telefono.
             var vehiculosDB =
-            await context.Vehiculos.Where(vehiculos =>
-                (!string.IsNullOrEmpty(filtro))
+            await context.Vehiculos.Where(p =>p.vehiculoID.ToString().Contains(filtro)
             )
             .Include(vehiculos => vehiculos.Marca)
             .Include(vehiculos => vehiculos.Modelo)
@@ -52,11 +51,10 @@ public class VehiculosServices : IVehiculosServices
             var vehiculosMapeados = vehiculosDB.Select(c => new Vehiculo()
             {
                 vehiculoID = c.vehiculoID,
-                Marca = new VehiculoMarca() { MarcaId = c.Marca!.MarcaId, Marca = c.Marca!.Marca },
-                Modelo = new VehiculoModelo() { ModeloId = c.Modelo!.ModeloId, Modelo = c.Modelo!.Modelo },
+                Marca = new VehiculoMarca() {/*MarcaId = c.Marca!.MarcaId,*/Marca = c.Marca!.Marca },
+                Modelo = new VehiculoModelo() {Modelo = c.Modelo!.Modelo },
                 Año = c.Año,
-                Color = c.Color
-            })
+                Color = c.Color})
                 .ToList();
             return Result<List<Vehiculo>>.Success(vehiculosMapeados);
         }
