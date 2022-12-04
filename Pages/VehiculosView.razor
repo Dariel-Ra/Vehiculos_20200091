@@ -41,9 +41,9 @@
         <label for="validationDefault03" class="form-label">Año</label>
           <select @bind="@Datos.Año" class="form-select" id="validationDefault03" required>
           <option selected disabled value="">Elegir...</option>
-          @foreach (var ColorList in ColorList)
+          @foreach (var Año in Año)
           {
-            <option value="@ColorList">@ColorList</option>
+            <option value="@Año">@Año</option>
           }
         </select>
       </div>
@@ -75,7 +75,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var vehiculo in Vehiculos)
+        @foreach (var vehiculo in Vehiculos!)
         {
             <tr>
                 <td>@vehiculo.vehiculoID</td>
@@ -88,9 +88,10 @@
     </tbody>
 </table>
 <br>
-a
+
 @code {
 
+  public List<int> Año { get; set; }= null!;
   List<VehiculoMarca> Marcas = new List<VehiculoMarca>();
   List<VehiculoModelo> Modelos = new List<VehiculoModelo>();
   public List<Vehiculo>? Vehiculos { get; set; } = new List<Vehiculo>();
@@ -121,6 +122,12 @@ a
     Marcas = await MarcaService.Consultar();
     Modelos = await ModeloServices.Consultar();
     await Consultar();
+
+    Año = new List<int>();
+    for (int y = DateTime.Now.Year + 2; y >= (DateTime.Now.Year - 10); y--)
+    {
+      Año.Add(y);
+    }
   }
 
   List<string> ColorList = new List<string>() { "Amarillo", "Azul", "Rojo", "Verde" };
