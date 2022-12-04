@@ -22,7 +22,7 @@ public class MarcaService : IMarcaService
     {
         try
         {
-            var marcas = await context.VehiculoMarcas.ToListAsync();
+            var marcas = await context.VehiculosMarcas.ToListAsync();
             return marcas;
         }
         catch

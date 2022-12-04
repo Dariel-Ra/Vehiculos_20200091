@@ -12,16 +12,16 @@ public class Vehiculo
     public int Año { get; set; }
     public string? Color { get; set; }
 
-    public static Vehiculo Crear(int marcaId, int modeloId, int año, string color) => new Vehiculo()
-    {
+    public static Vehiculo Crear(Vehiculo datos) => 
+    new (){
         vehiculoID = 0,
-        MarcaId = marcaId,
-        ModeloId = modeloId,
-        Año = año,
-        Color = color
+        MarcaId = datos.MarcaId,
+        ModeloId = datos.ModeloId,
+        Año = datos.Año,
+        Color = datos.Color
     };
 
-    internal void Update(int marcaId, int modeloId, int añoId, string color)
+    internal void Update(int marcaId, int modeloId, int año, string color)
     {
         throw new NotImplementedException();
     }

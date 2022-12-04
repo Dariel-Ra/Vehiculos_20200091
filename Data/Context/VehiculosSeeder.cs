@@ -8,21 +8,21 @@ public class VehiculosSeeder
     {
         //Si la tabla de la base de datos no posee registros, registramos las ciudades pre-iniciales.
 
-        if(!database.VehiculoMarcas.Any())
+        if(!database.VehiculosMarcas.Any())
         {
             var vehiculosMarcas = new List<VehiculoMarca>(){
                 VehiculoMarca.Crear("Toyota")
             };
-            database.VehiculoMarcas.AddRange(vehiculosMarcas);
+            database.VehiculosMarcas.AddRange(vehiculosMarcas);
             await database.SaveChangesAsync();
         }
 
-        if(!database.VehiculoModelos.Any())
+        if(!database.VehiculosModelos.Any())
         {
             var vehiculosModelos = new List<VehiculoModelo>(){
                 VehiculoModelo.Crear("CRV")
             };
-            database.VehiculoModelos.AddRange(vehiculosModelos);
+            database.VehiculosModelos.AddRange(vehiculosModelos);
             await database.SaveChangesAsync();
         }
     }

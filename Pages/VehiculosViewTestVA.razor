@@ -4,7 +4,7 @@
 @layout VehiculosMainLayout
 
 <PageTitle>Registro de Vehiculos</PageTitle>
-
+@*
 <div class="header">
     <div class="text-center header-text">
       <p class="fw-bold header-text fs-4">Registro de Vehiculos</p>
@@ -83,7 +83,7 @@
                 <td>@vehiculo.AñoId!</td>
                 <td>@vehiculo.Color</td>
             </tr>
-        }*@
+        }*@@*
     </tbody>
 </table>
 <br>
@@ -132,6 +132,6 @@ Color = "Amarillo"
 
     /*public List<Vehiculo>? Vehiculos { get; set; }
     = new List<Vehiculo>();*/
-*@
+*@@*
 public Vehiculo model { get; set; } = new Vehiculo();
-}
+}*@

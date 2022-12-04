@@ -22,7 +22,7 @@ public class ModeloServices : IModeloServices
     {
         try
         {
-            var modelo = await context.VehiculoModelos.ToListAsync();
+            var modelo = await context.VehiculosModelos.ToListAsync();
             return modelo;
         }
         catch
