@@ -15,6 +15,7 @@ builder.Services.AddScoped<IVehiculosDbContext,VehiculosDbContext>();
 builder.Services.AddScoped<IVehiculosServices,VehiculosServices>();
 builder.Services.AddScoped<IMarcaService,MarcaService>();
 builder.Services.AddScoped<IModeloServices,ModeloServices>();
+builder.Services.AddScoped<IColorServices, ColorServices>();
 
 
 var app = builder.Build();

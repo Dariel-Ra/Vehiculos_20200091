@@ -49,11 +49,11 @@
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault04" class="form-label">Color</label>
-        <select @bind="@Datos.Color" class="form-select" id="validationDefault04" required>
+        <select @bind="@Datos.ColorId" class="form-select" id="validationDefault04" required>
           <option selected disabled value="">Elegir...</option>
-          @foreach (var ColorList in ColorList)
+          @foreach (var color in Colores)
           {
-            <option value="@ColorList">@ColorList</option>
+            <option value="@color.ColorId">@color.Color</option>
           }
         </select>
       </div>
@@ -82,7 +82,7 @@
                 <td>@vehiculo.Marca!.Marca</td>
                 <td>@vehiculo.Modelo!.Modelo</td>
                 <td>@vehiculo.Año</td>
-                <td>@vehiculo.Color</td>
+                <td>@vehiculo.Color!.Color</td>
             </tr>
         }
     </tbody>
@@ -94,6 +94,7 @@
   public List<int> Año { get; set; }= null!;
   List<VehiculoMarca> Marcas = new List<VehiculoMarca>();
   List<VehiculoModelo> Modelos = new List<VehiculoModelo>();
+  List<VehiculoColor> Colores = new List<VehiculoColor>();
   public List<Vehiculo>? Vehiculos { get; set; } = new List<Vehiculo>();
 
   public string Filtro { get; set; } = "";
@@ -121,6 +122,7 @@
   {
     Marcas = await MarcaService.Consultar();
     Modelos = await ModeloServices.Consultar();
+    Colores = await ColorServices.Consultar();
     await Consultar();
 
     Año = new List<int>();

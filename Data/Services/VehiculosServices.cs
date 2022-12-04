@@ -47,6 +47,7 @@ public class VehiculosServices : IVehiculosServices
             )
             .Include(vehiculos => vehiculos.Marca)
             .Include(vehiculos => vehiculos.Modelo)
+            .Include(vehiculos => vehiculos.Color)
             .ToListAsync(new());
             var vehiculosMapeados = vehiculosDB.Select(c => new Vehiculo()
             {
@@ -54,7 +55,8 @@ public class VehiculosServices : IVehiculosServices
                 Marca = new VehiculoMarca() {/*MarcaId = c.Marca!.MarcaId,*/Marca = c.Marca!.Marca },
                 Modelo = new VehiculoModelo() {Modelo = c.Modelo!.Modelo },
                 Año = c.Año,
-                Color = c.Color})
+                Color = new VehiculoColor() {Color = c.Color!.Color}
+            })
                 .ToList();
             return Result<List<Vehiculo>>.Success(vehiculosMapeados);
         }
@@ -105,6 +107,28 @@ public class VehiculosServices : IVehiculosServices
         catch (Exception E)
         {
             return Result<List<VehiculoModelo>>.Failed(E.Message);
+        }
+    }
+        public async Task<Result<List<VehiculoColor>>> GetVehiculosColores()
+    {
+        try
+        {
+            //Se consulta en la base de datos segun el nombre del contacto y el telefono.
+            var vehiculosColorDB =
+            await context.VehiculosColores
+            .ToListAsync(new());
+            //Se convierten los datos para poder devolverlos.
+            var vehiculosColorDTO = vehiculosColorDB.Select(c => new VehiculoColor()
+            {
+                ColorId = c.ColorId,
+                Color = c.Color
+            }).ToList();
+            //Se devuelven los datos convertidos al tipo de dato esperado.
+            return Result<List<VehiculoColor>>.Success(vehiculosColorDTO);
+        }
+        catch (Exception E)
+        {
+            return Result<List<VehiculoColor>>.Failed(E.Message);
         }
     }
 }

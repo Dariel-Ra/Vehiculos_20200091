@@ -25,5 +25,15 @@ public class VehiculosSeeder
             database.VehiculosModelos.AddRange(vehiculosModelos);
             await database.SaveChangesAsync();
         }
+        if (!database.VehiculosColores.Any())
+        {
+            var vehiculosColores = new List<VehiculoColor>(){
+                VehiculoColor.Crear("Rojo"),
+                VehiculoColor.Crear("Azul"),
+                VehiculoColor.Crear("Verde")
+            };
+            database.VehiculosColores.AddRange(vehiculosColores);
+            await database.SaveChangesAsync();
+        }
     }
 }
