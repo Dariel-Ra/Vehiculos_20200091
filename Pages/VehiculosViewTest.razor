@@ -1,17 +1,15 @@
-@page "/vehiculotest"
+@page "/vehiculoTest"
 @using Vehiculos_20200091.Data.Models
-@layout VehiculosMainLayout
+@layout MainLayout
 
 <PageTitle>Registro de Vehiculos</PageTitle>
-@*
-<div class="header">
+
+<div class="header container-header">
     <div class="text-center header-text">
       <p class="fw-bold header-text fs-4">Registro de Vehiculos</p>
     </div>
 </div>
-
 <div class=" mt-1"></div>
-
 <div class="card">
   <div class="card-header card-header-color">
         <p class=" card-title fs-6 fw-bold text-uppercase fw-normal text-white ">Datos del Vehiculo</p>
@@ -21,44 +19,52 @@
     <div class="row g-3">
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault01" class="form-label">Marca</label>
-        <select @bind="@model.Marca" class="form-select" id="validationDefault01">
+        <select @bind="@Datos.MarcaId" class="form-select" id="validationDefault01">
           <option selected disabled value="">Elegir...</option>
-          @foreach (var MarcaList in MarcaList){
-          <option value=@MarcaList>@MarcaList</option>
+          @foreach (var marca in Marcas){
+          <option value="@marca.MarcaId">@marca.Marca</option>
          }
         </select>
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault02" class="form-label">Modelo</label>
-        <select @bind="@model.Modelo" class="form-select" id="validationDefault01">
+        <select @bind="@Datos.ModeloId" class="form-select" id="validationDefault01">
           <option selected disabled value="">Elegir...</option>
-          @foreach (var ModeloList in ModeloList)
+          @foreach (var modelo in Modelos)
           {
-            <option value="@ModeloList">@ModeloList</option>
+            <option value="@modelo.ModeloId">@modelo.Modelo</option>
           }
         </select>
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault03" class="form-label">Año</label>
-        <input @bind="@model.AñoId" type="text" class="form-control" id="validationDefault03" required>
+          <select @bind="@Datos.Año" class="form-select" id="validationDefault03" required>
+          <option selected disabled value="">Elegir...</option>
+          @foreach (var Año in Año)
+          {
+            <option value="@Año">@Año</option>
+          }
+        </select>
       </div>
       <div class="col-md-6 col-lg-6">
         <label for="validationDefault04" class="form-label">Color</label>
-        <select @bind="@model.Color" class="form-select" id="validationDefault04" required>
+        <select @bind="@Datos.ColorId" class="form-select" id="validationDefault04" required>
           <option selected disabled value="">Elegir...</option>
-          @foreach (var ColorList in ColorList)
+          @foreach (var color in Colores)
           {
-            <option value="@ColorList">@ColorList</option>
+            <option value="@color.ColorId">@color.Color</option>
           }
         </select>
       </div>
       <div class="col-12">
-        <button class="btn btn-primary">Guardar</button>
+        <button class="btn btn-primary" @onclick="Registrar">Guardar</button>
       </div>
     </div>
   </div>
 </div>
+
 <div class=" mt-1"></div>
+
 <table class="table table-striped">
     <thead class="table-dark">
         <tr>
@@ -70,14 +76,14 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var vehiculo in Vehiculos)
+        @foreach (var vehiculo in Vehiculos!)
         {
             <tr>
                 <td>@vehiculo.vehiculoID</td>
-                <td>@vehiculo.Marca</td>
-                <td>@vehiculo.Modelo</td>
-                <td>@vehiculo.AñoId</td>
-                <td>@vehiculo.Color</td>
+                <td>@vehiculo.Marca!.Marca</td>
+                <td>@vehiculo.Modelo!.Modelo</td>
+                <td>@vehiculo.Año</td>
+                <td>@vehiculo.Color!.Color</td>
             </tr>
         }
     </tbody>
@@ -86,43 +92,44 @@
 
 @code {
 
-  //string[] MarcaString = new[] { "Toyota", "Nissan" };
+  public List<int> Año { get; set; }= null!;
+  List<VehiculoMarca> Marcas = new List<VehiculoMarca>();
+  List<VehiculoModelo> Modelos = new List<VehiculoModelo>();
+  List<VehiculoColor> Colores = new List<VehiculoColor>();
+  public List<Vehiculo>? Vehiculos { get; set; } = new List<Vehiculo>();
 
-  List<string> MarcaList = new List<string>() { "Toyota", "Nissan" };
-  List<string> ModeloList = new List<string>() { "Camry", "Corolla S", "Centra" };
+  public string Filtro { get; set; } = "";
+
+  public async void Registrar()
+  {
+    var vehiculo = await VehiculosServices.Registrar(Datos);
+    if (vehiculo.Succeeded)
+    {
+      var Id = vehiculo.Data;
+    }
+    else Console.WriteLine(vehiculo.Message);
+  }
+
+  public async Task Consultar()
+  {
+    var r = await VehiculosServices.Consultar(Filtro);
+    if(r.Succeeded) Vehiculos = r.Data;
+  }
+  protected override async Task OnInitializedAsync()
+  {
+    Marcas = await MarcaService.Consultar();
+    Modelos = await ModeloServices.Consultar();
+    Colores = await ColorServices.Consultar();
+    await Consultar();
+
+    Año = new List<int>();
+    for (int y = DateTime.Now.Year + 2; y >= (DateTime.Now.Year - 10); y--)
+    {
+      Año.Add(y);
+    }
+  }
+
   List<string> ColorList = new List<string>() { "Amarillo", "Azul", "Rojo", "Verde" };
-    public List<Vehiculo> Vehiculos { get; set; }
-    = new List<Vehiculo>(){
-new Vehiculo(){
-vehiculoID = 1,
-Marca= "Toyota",
-Modelo = "Corolla S",
-AñoId = 2017,
-Color = "Azul"
-},
-new Vehiculo(){
-vehiculoID = 2,
-Marca= "Nissan",
-Modelo = "Centra",
-AñoId = 2018,
-Color = "Rojo"
-},
-new Vehiculo(){
-vehiculoID = 3,
-Marca= "Toyota",
-Modelo = "Camry",
-AñoId = 2019,
-Color = "Azul"
-},
-new Vehiculo(){
-vehiculoID = 4,
-Marca= "Nissan",
-Modelo = "Centra",
-AñoId = 2020,
-Color = "Amarillo"
-},
-    };
+public Vehiculo Datos { get; set; } = new Vehiculo();
 
-public Vehiculo model { get; set; } = new Vehiculo();
 }
-*@

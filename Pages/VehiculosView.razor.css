@@ -1,6 +1,8 @@
 .container-header{
     padding-bottom: 8em;
-    background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, .35), rgb(255, 255, 255, .45), rgb(255, 255, 255, .35), rgb(255, 255, 255, 1)),url(https://cdn.pixabay.com/photo/2016/11/14/09/23/volkswagen-1822997_960_720.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, .35), 
+    rgb(255, 255, 255, .45), rgb(255, 255, 255, .35), rgb(255, 255, 255, 1)),
+    url(https://cdn.pixabay.com/photo/2016/11/14/09/23/volkswagen-1822997_960_720.jpg);
 
     background-position: center;
     background-repeat: no-repeat;

@@ -144,39 +144,6 @@
         }
       },
       {
-        "HashCode": 1119342024,
-        "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Pages.VehiculosViewTestVA",
-        "AssemblyName": "Vehiculos_20200091",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VehiculosViewTestVA"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Pages.VehiculosViewTestVA"
-        }
-      },
-      {
-        "HashCode": 2099015353,
-        "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Pages.VehiculosViewTestVA",
-        "AssemblyName": "Vehiculos_20200091",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Vehiculos_20200091.Pages.VehiculosViewTestVA"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Pages.VehiculosViewTestVA",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1022231804,
         "Kind": "Components.Component",
         "Name": "Vehiculos_20200091.Pages.VehiculosView",
@@ -243,55 +210,68 @@
         }
       },
       {
-        "HashCode": 1957196536,
+        "HashCode": 1289870017,
         "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Shared.SurveyPrompt",
+        "Name": "Vehiculos_20200091.Backup.VehiculosMainLayout",
         "AssemblyName": "Vehiculos_20200091",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "VehiculosMainLayout"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Shared.SurveyPrompt"
+          "Common.TypeName": "Vehiculos_20200091.Backup.VehiculosMainLayout"
         }
       },
       {
-        "HashCode": 657182670,
+        "HashCode": 1639597786,
         "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Shared.SurveyPrompt",
+        "Name": "Vehiculos_20200091.Backup.VehiculosMainLayout",
         "AssemblyName": "Vehiculos_20200091",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Vehiculos_20200091.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "Vehiculos_20200091.Backup.VehiculosMainLayout"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Shared.SurveyPrompt",
+          "Common.TypeName": "Vehiculos_20200091.Backup.VehiculosMainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1820462917,
+        "Kind": "Components.Component",
+        "Name": "Vehiculos_20200091.Backup.VehiculosNavMenu",
+        "AssemblyName": "Vehiculos_20200091",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "VehiculosNavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Vehiculos_20200091.Backup.VehiculosNavMenu"
+        }
+      },
+      {
+        "HashCode": -1413702808,
+        "Kind": "Components.Component",
+        "Name": "Vehiculos_20200091.Backup.VehiculosNavMenu",
+        "AssemblyName": "Vehiculos_20200091",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Vehiculos_20200091.Backup.VehiculosNavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Vehiculos_20200091.Backup.VehiculosNavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -650,6 +630,59 @@
         }
       },
       {
+        "HashCode": 1957196536,
+        "Kind": "Components.Component",
+        "Name": "Vehiculos_20200091.Shared.SurveyPrompt",
+        "AssemblyName": "Vehiculos_20200091",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Vehiculos_20200091.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 657182670,
+        "Kind": "Components.Component",
+        "Name": "Vehiculos_20200091.Shared.SurveyPrompt",
+        "AssemblyName": "Vehiculos_20200091",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Vehiculos_20200091.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Vehiculos_20200091.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1732151142,
         "Kind": "Components.Component",
         "Name": "Vehiculos_20200091.Shared.VehiculosNavMenu",
@@ -679,72 +712,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Vehiculos_20200091.Shared.VehiculosNavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1289870017,
-        "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Backup.VehiculosMainLayout",
-        "AssemblyName": "Vehiculos_20200091",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VehiculosMainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Backup.VehiculosMainLayout"
-        }
-      },
-      {
-        "HashCode": 1639597786,
-        "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Backup.VehiculosMainLayout",
-        "AssemblyName": "Vehiculos_20200091",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Vehiculos_20200091.Backup.VehiculosMainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Backup.VehiculosMainLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1820462917,
-        "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Backup.VehiculosNavMenu",
-        "AssemblyName": "Vehiculos_20200091",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "VehiculosNavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Backup.VehiculosNavMenu"
-        }
-      },
-      {
-        "HashCode": -1413702808,
-        "Kind": "Components.Component",
-        "Name": "Vehiculos_20200091.Backup.VehiculosNavMenu",
-        "AssemblyName": "Vehiculos_20200091",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Vehiculos_20200091.Backup.VehiculosNavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Vehiculos_20200091.Backup.VehiculosNavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -17034,11 +17001,6 @@
   },
   "RootNamespace": "Vehiculos_20200091",
   "Documents": [
-    {
-      "FilePath": "c:\\2020-0091\\Vehiculos_20200091\\Pages\\VehiculosViewTestVA.razor",
-      "TargetPath": "Pages\\VehiculosViewTestVA.razor",
-      "FileKind": "component"
-    },
     {
       "FilePath": "c:\\2020-0091\\Vehiculos_20200091\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
