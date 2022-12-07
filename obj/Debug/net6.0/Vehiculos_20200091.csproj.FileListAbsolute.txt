@@ -45,7 +45,6 @@ C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Backup\VehiculosMainL
 C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Backup\VehiculosNavMenu.razor.rz.scp.css
 C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Pages\VehiculosView.razor.rz.scp.css
 C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Pages\VehiculosViewTest.razor.rz.scp.css
-C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Pages\VehiculosViewTestVA.razor.rz.scp.css
 C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\2020-0091\Vehiculos_20200091\obj\Debug\net6.0\scopedcss\Shared\SideBardMenu.razor.rz.scp.css
