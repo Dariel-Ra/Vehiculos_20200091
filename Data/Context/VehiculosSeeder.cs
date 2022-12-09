@@ -11,7 +11,9 @@ public class VehiculosSeeder
         if(!database.VehiculosMarcas.Any())
         {
             var vehiculosMarcas = new List<VehiculoMarca>(){
-                VehiculoMarca.Crear("Toyota")
+                VehiculoMarca.Crear("Tacoma"),
+                VehiculoMarca.Crear("Honda"),
+                VehiculoMarca.Crear("Ford")
             };
             database.VehiculosMarcas.AddRange(vehiculosMarcas);
             await database.SaveChangesAsync();
@@ -20,7 +22,13 @@ public class VehiculosSeeder
         if(!database.VehiculosModelos.Any())
         {
             var vehiculosModelos = new List<VehiculoModelo>(){
-                VehiculoModelo.Crear("CRV")
+                VehiculoModelo.Crear("Tacoma"),
+                VehiculoModelo.Crear("Hilux"),
+                VehiculoModelo.Crear("CRV"),
+                VehiculoModelo.Crear("Ridgeline"),
+                VehiculoModelo.Crear("Ranger"),
+                VehiculoModelo.Crear("Raptor")
+,
             };
             database.VehiculosModelos.AddRange(vehiculosModelos);
             await database.SaveChangesAsync();
@@ -30,7 +38,10 @@ public class VehiculosSeeder
             var vehiculosColores = new List<VehiculoColor>(){
                 VehiculoColor.Crear("Rojo"),
                 VehiculoColor.Crear("Azul"),
-                VehiculoColor.Crear("Verde")
+                VehiculoColor.Crear("Verde"),
+                VehiculoColor.Crear("Naranja"),
+                VehiculoColor.Crear("Blanco"),
+                VehiculoColor.Crear("Negro")
             };
             database.VehiculosColores.AddRange(vehiculosColores);
             await database.SaveChangesAsync();

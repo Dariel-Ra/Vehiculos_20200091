@@ -108,16 +108,13 @@
       var Id = vehiculo.Data;
     }
     else Console.WriteLine(vehiculo.Message);
+    await Consultar();
   }
 
   public async Task Consultar()
   {
     var r = await VehiculosServices.Consultar(Filtro);
     if(r.Succeeded) Vehiculos = r.Data;
-//    var response = await VehiculosServices.Consultar(Filtro);
-//    if (response.Succeeded)
-//      Vehiculos = response.Data!;
-//    return true;
   }
   protected override async Task OnInitializedAsync()
   {
@@ -131,6 +128,8 @@
     {
       Año.Add(y);
     }
+
+    
   }
 public Vehiculo Datos { get; set; } = new Vehiculo();
 

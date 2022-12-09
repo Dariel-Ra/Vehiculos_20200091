@@ -7,8 +7,6 @@ namespace Vehiculos_20200091.Data.Services;
 public interface IVehiculosServices
 {
     Task<Result<List<Vehiculo>>> Consultar(string filtro);
-    Task<Result<List<VehiculoMarca>>> GetVehiculosMarcas();
-    Task<Result<List<VehiculoModelo>>> GetVehiculosModelo();
     Task<Result<int>> Registrar(Vehiculo datos);
 }
 
@@ -63,72 +61,6 @@ public class VehiculosServices : IVehiculosServices
         catch (Exception E)
         {
             return Result<List<Vehiculo>>.Failed(E.Message);
-        }
-    }
-    public async Task<Result<List<VehiculoMarca>>> GetVehiculosMarcas()
-    {
-        try
-        {
-            //Se consulta en la base de datos segun el nombre del contacto y el telefono.
-            var vehiculosmarcasDB =
-            await context.VehiculosMarcas
-            .ToListAsync(new());
-            //Se convierten los datos para poder devolverlos.
-            var vehiculosmarcasDTO = vehiculosmarcasDB.Select(c => new VehiculoMarca()
-            {
-                MarcaId = c.MarcaId,
-                Marca = c.Marca
-            }).ToList();
-            //Se devuelven los datos convertidos al tipo de dato esperado.
-            return Result<List<VehiculoMarca>>.Success(vehiculosmarcasDTO);
-        }
-        catch (Exception E)
-        {
-            return Result<List<VehiculoMarca>>.Failed(E.Message);
-        }
-    }
-    public async Task<Result<List<VehiculoModelo>>> GetVehiculosModelo()
-    {
-        try
-        {
-            //Se consulta en la base de datos segun el nombre del contacto y el telefono.
-            var vehiculosmodelosDB =
-            await context.VehiculosModelos
-            .ToListAsync(new());
-            //Se convierten los datos para poder devolverlos.
-            var vehiculosmodelosDTO = vehiculosmodelosDB.Select(c => new VehiculoModelo()
-            {
-                ModeloId = c.ModeloId,
-                Modelo = c.Modelo
-            }).ToList();
-            //Se devuelven los datos convertidos al tipo de dato esperado.
-            return Result<List<VehiculoModelo>>.Success(vehiculosmodelosDTO);
-        }
-        catch (Exception E)
-        {
-            return Result<List<VehiculoModelo>>.Failed(E.Message);
-        }
-    }
-        public async Task<Result<List<VehiculoColor>>> GetVehiculosColores()
-    {
-        try
-        {
-            //Se consulta en la base de datos segun el nombre del contacto y el telefono.
-            var vehiculosColorDB =
-            await context.VehiculosColores
-            .ToListAsync(new());
-            //Se convierten los datos para poder devolverlos.
-            var vehiculosColorDTO = vehiculosColorDB.Select(c => new VehiculoColor()
-            {
-                ColorId = c.ColorId,
-                Color = c.Color
-            }).ToList();
-            //Se devuelven los datos convertidos al tipo de dato esperado.
-            return Result<List<VehiculoColor>>.Success(vehiculosColorDTO);
-        }
-        catch (Exception E)
-        {
-            return Result<List<VehiculoColor>>.Failed(E.Message);
         }
     }
 }
