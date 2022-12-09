@@ -20,6 +20,23 @@
     background-color: #212529/*#4b4b4b*/;
     color: #fff;   
 }
+.hexcolorbox[b-m7dgwkf9bz]{
+    
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 3rem;
+    height: 3rem;
+}
+
+.hexcolor[b-m7dgwkf9bz]{
+    position: relative;
+    width: 3rem;
+    height: 1rem;
+    top: .5rem;
+    border-radius: 12rem;
+    transform: rotate(140deg);
+    box-shadow: 0px -1px 10px gray;
+}
 
 /* _content/Vehiculos_20200091/Pages/VehiculosViewTest.razor.rz.scp.css */
 .container-header[b-ofcm6puc8x]{
@@ -138,8 +155,24 @@ main[b-gpsht645au] {
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
+    position: relative;
 }
-
+.oi-front[b-zz9qp9140t] {
+    width: 1.8rem;
+    font-size: 1rem;
+    vertical-align: text-top;
+    bottom: -4px;
+    right: -4px;
+    position: relative;
+}
+.oi-back[b-zz9qp9140t]{
+    width: 1.8rem;
+    font-size: 1rem;
+    position: absolute;
+    left: -8px;
+    top: -9px;
+    z-index: -1;
+}
 .nav-item[b-zz9qp9140t] {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
@@ -182,249 +215,6 @@ main[b-gpsht645au] {
         display: block;
     }
 }
-/* _content/Vehiculos_20200091/Shared/SideBardMainLayout.razor.rz.scp.css */
-.page[b-9ew7d7p57b] {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-main[b-9ew7d7p57b] {
-    flex: 1;
-}
-
-.container-header[b-9ew7d7p57b]{
-    padding-bottom: 8em;
-    background-image: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, .35), rgb(255, 255, 255, .45), rgb(255, 255, 255, .35), rgb(255, 255, 255, 1)),url(https://cdn.pixabay.com/photo/2016/11/14/09/23/volkswagen-1822997_960_720.jpg);
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.sidebar[b-9ew7d7p57b] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-}
-
-.top-row[b-9ew7d7p57b] {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-}
-
-    .top-row[b-9ew7d7p57b]  a, .top-row .btn-link[b-9ew7d7p57b] {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-    }
-
-    .top-row a:first-child[b-9ew7d7p57b] {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-9ew7d7p57b] {
-        display: none;
-    }
-
-    .top-row.auth[b-9ew7d7p57b] {
-        justify-content: space-between;
-    }
-
-    .top-row a[b-9ew7d7p57b], .top-row .btn-link[b-9ew7d7p57b] {
-        margin-left: 0;
-    }
-}
-
-@media (min-width: 641px) {
-    .page[b-9ew7d7p57b] {
-        flex-direction: row;
-    }
-
-    .sidebar[b-9ew7d7p57b] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row[b-9ew7d7p57b] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row[b-9ew7d7p57b], article[b-9ew7d7p57b] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
-}
-/* _content/Vehiculos_20200091/Shared/SideBardMenu.razor.rz.scp.css */
-*[b-rfjihc9s5g], *[b-rfjihc9s5g]::after, *[b-rfjihc9s5g]::before{
-   box-sizing: border-box; 
-   margin: 0;
-   padding: 0;
-}
-:root[b-rfjihc9s5g] {
-    --clr-primary-400: #3333;
-    --clr-blue: #0d6efd;
-    --clr-indigo: #6610f2;
-    --clr-purple: #6f42c1;
-    --clr-pink: #d63384;
-    --clr-red: #dc3545;
-    --clr-orange: #fd7e14;
-    --clr-yellow: #ffc107;
-    --clr-green: #198754;
-    --clr-teal: #20c997;
-    --clr-cyan: #0dcaf0;
-    --clr-white: #fff;
-    --clr-gray: #6c757d;
-    --clr-gray-dark: #343a40;
-    --clr-gray-100: #f8f9fa;
-    --clr-gray-200: #e9ecef;
-    --clr-gray-300: #dee2e6;
-    --clr-gray-400: #ced4da;
-    --clr-gray-500: #adb5bd;
-    --clr-gray-600: #6c757d;
-    --clr-gray-700: #495057;
-    --clr-gray-800: #343a40;
-    --clr-gray-900: #212529;
-    --clr-primary: #0d6efd;
-    --clr-secondary: #6c757d;
-    --clr-success: #198754;
-    --clr-info: #0dcaf0;
-    --clr-warning: #ffc107;
-    --clr-danger: #dc3545;
-    --clr-light: #f8f9fa;
-    --clr-dark: #212529;
-}
-a[b-rfjihc9s5g] {
-    text-decoration : none;
-    }
-.page[b-rfjihc9s5g]{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.side-nav[b-rfjihc9s5g]{
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 12rem;
-    padding: 10px 14px;
-    
-    
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-    outline: red solid 2px;
-}
-.navbar-toggler[b-rfjihc9s5g] {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.top-row[b-rfjihc9s5g] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.navbar-brand[b-rfjihc9s5g] {
-    font-size: 1.1rem;
-    text-decoration: none;
-}
-.primary-navigation > li[b-rfjihc9s5g]{
-    list-style: none;
-    text-decoration: none;
-}
-.primary-nav-link[b-rfjihc9s5g]{
-    text-decoration:none
-    
-}
-
-.oi[b-rfjihc9s5g] {
-    width: 2rem;
-    font-size: 1.1rem;
-    vertical-align: text-top;
-    text-decoration: none;
-    top: -2px;
-    color: red;
-    text-decoration-color: blue;
-}
-
-.primary-nav-sidebard[b-rfjihc9s5g]{
-    display: flex;
-    flex: 1;
-    list-style: none;
-    width: 10rem;
-}
-.primary-nav-item[b-rfjihc9s5g] {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
-}
-
-    .primary-nav-item:first-of-type[b-rfjihc9s5g] {
-        padding-top: 1rem;
-    }
-
-    .primary-nav-item:last-of-type[b-rfjihc9s5g] {
-        padding-bottom: 1rem;
-    }
-
-    .primary-nav-item[b-rfjihc9s5g]  a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-.primary-nav-item[b-rfjihc9s5g]  a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
-}
-
-.primary-nav-item[b-rfjihc9s5g]  a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
-
-main[b-rfjihc9s5g]{
-    background-color: chocolate;
-    flex: 1;
-}
-
-@media (min-width: 641px) {
-    .page[b-rfjihc9s5g] {
-        flex-direction: row;
-    }
-
-    .side-nav[b-rfjihc9s5g] {
-        width: 12rem;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-}
-/* _content/Vehiculos_20200091/Shared/Sidebard_bootstrap.razor.rz.scp.css */
-.bd-placeholder-img[b-b8f8smlgm7] {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    }
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg[b-b8f8smlgm7] {
-        font-size: 3.5rem;
-        }
-}
-
-
 /* _content/Vehiculos_20200091/Shared/VehiculosMainLayout.razor.rz.scp.css */
 .page[b-qclqk60bxb] {
     position: relative;

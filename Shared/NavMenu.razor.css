@@ -16,8 +16,24 @@
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
+    position: relative;
 }
-
+.oi-front {
+    width: 1.8rem;
+    font-size: 1rem;
+    vertical-align: text-top;
+    bottom: -4px;
+    right: -4px;
+    position: relative;
+}
+.oi-back{
+    width: 1.8rem;
+    font-size: 1rem;
+    position: absolute;
+    left: -8px;
+    top: -9px;
+    z-index: -1;
+}
 .nav-item {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;

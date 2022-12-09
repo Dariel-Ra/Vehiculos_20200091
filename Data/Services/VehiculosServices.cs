@@ -53,7 +53,8 @@ public class VehiculosServices : IVehiculosServices
                 Marca = new VehiculoMarca() {/*MarcaId = c.Marca!.MarcaId,*/Marca = c.Marca!.Marca },
                 Modelo = new VehiculoModelo() {Modelo = c.Modelo!.Modelo },
                 Año = c.Año,
-                Color = new VehiculoColor() {Color = c.Color!.Color}
+                Color = new VehiculoColor() {Color = c.Color!.Color, HexColor = c.Color!.HexColor}
+
             })
                 .ToList();
             return Result<List<Vehiculo>>.Success(vehiculosMapeados);

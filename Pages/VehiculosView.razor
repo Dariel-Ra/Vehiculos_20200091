@@ -63,6 +63,7 @@
   </div>
 </div>
 
+<div style="background-color:#@BoxColor; color:white; width:100px; height:100px">@BoxColor</div>
 <div class=" mt-1"></div>
 
 <table class="table table-striped">
@@ -73,6 +74,7 @@
             <th>Modelo</th>
             <th>Año</th>
             <th>Color</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -84,12 +86,13 @@
                 <td>@vehiculo.Modelo!.Modelo</td>
                 <td>@vehiculo.Año</td>
                 <td>@vehiculo.Color!.Color</td>
+                <td class="hexcolorbox">
+                <div class="hexcolor" style="background-color:#@vehiculo.Color!.HexColor"></div></td>
             </tr>
         }
     </tbody>
 </table>
 <br>
-
 @code {
 
   public List<int> Año { get; set; }= null!;
@@ -128,9 +131,9 @@
     {
       Año.Add(y);
     }
-
-    
   }
 public Vehiculo Datos { get; set; } = new Vehiculo();
 
+//string[] BoxColor  = new string[] { "#212529" };
+  string BoxColor = "212529";
 }

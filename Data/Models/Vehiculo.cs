@@ -19,7 +19,7 @@ public class Vehiculo
         MarcaId = datos.MarcaId,
         ModeloId = datos.ModeloId,
         Año = datos.Año,
-        ColorId = datos.ColorId
+        ColorId = datos.ColorId,
     };
 
     internal void Update(int marcaId, int modeloId, int año, int colorId)
