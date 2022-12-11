@@ -87,8 +87,9 @@
                 <td>@vehiculo.Año</td>
                 <td>@vehiculo.Color!.Color</td>
                 <td class="hexcolorbox">
-                <div class="hexcolor" style="background-color:#@vehiculo.Color!.HexColor"></div></td>
+                <div class="hexcolor" style="background-color:; background-image: linear-gradient(to right, #@vehiculo.Color!.HexColor, #@vehiculo.Color!.HexColor, #@vehiculo.Color!.HexColor)"></div></td>
             </tr>
+            //background-image: linear-gradient(to right, #ff00002e,#ff0000a8,#ff0000d9,red,#ff0000d9,#ff0000a8,#ff00002e);
         }
     </tbody>
 </table>

@@ -8,69 +8,77 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Vehiculos_20200091
 build_property.RootNamespace = Vehiculos_20200091
-build_property.ProjectDir = C:\2020-0091\Vehiculos_20200091\
+build_property.ProjectDir = c:\2020-0091\Vehiculos_20200091\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\2020-0091\Vehiculos_20200091
+build_property.MSBuildProjectDirectory = c:\2020-0091\Vehiculos_20200091
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/2020-0091/Vehiculos_20200091/App.razor]
+[c:/2020-0091/Vehiculos_20200091/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/2020-0091/Vehiculos_20200091/Pages/Counter.razor]
+[c:/2020-0091/Vehiculos_20200091/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/2020-0091/Vehiculos_20200091/Pages/FetchData.razor]
+[c:/2020-0091/Vehiculos_20200091/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/2020-0091/Vehiculos_20200091/Pages/Index.razor]
+[c:/2020-0091/Vehiculos_20200091/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/2020-0091/Vehiculos_20200091/Shared/SurveyPrompt.razor]
+[c:/2020-0091/Vehiculos_20200091/Pages/SideBardView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lkZUJhcmRWaWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/2020-0091/Vehiculos_20200091/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/2020-0091/Vehiculos_20200091/_Imports.razor]
+[c:/2020-0091/Vehiculos_20200091/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/2020-0091/Vehiculos_20200091/Pages/VehiculosView.razor]
+[c:/2020-0091/Vehiculos_20200091/Pages/VehiculosView.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9zVmlldy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-m7dgwkf9bz
 
-[C:/2020-0091/Vehiculos_20200091/Pages/VehiculosViewTest.razor]
+[c:/2020-0091/Vehiculos_20200091/Pages/VehiculosViewTest.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9zVmlld1Rlc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ofcm6puc8x
 
-[C:/2020-0091/Vehiculos_20200091/Shared/MainLayout.razor]
+[c:/2020-0091/Vehiculos_20200091/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-gpsht645au
 
-[C:/2020-0091/Vehiculos_20200091/Shared/NavMenu.razor]
+[c:/2020-0091/Vehiculos_20200091/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-zz9qp9140t
 
-[C:/2020-0091/Vehiculos_20200091/Shared/VehiculosMainLayout.razor]
+[c:/2020-0091/Vehiculos_20200091/Shared/SideBardMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpZGVCYXJkTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-rfjihc9s5g
+
+[c:/2020-0091/Vehiculos_20200091/Shared/VehiculosMainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFZlaGljdWxvc01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qclqk60bxb
 
-[C:/2020-0091/Vehiculos_20200091/Shared/VehiculosNavMenu.razor]
+[c:/2020-0091/Vehiculos_20200091/Shared/VehiculosNavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFZlaGljdWxvc05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-iweq8sb24z
 
-[C:/2020-0091/Vehiculos_20200091/Pages/Error.cshtml]
+[c:/2020-0091/Vehiculos_20200091/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/2020-0091/Vehiculos_20200091/Pages/_Host.cshtml]
+[c:/2020-0091/Vehiculos_20200091/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/2020-0091/Vehiculos_20200091/Pages/_Layout.cshtml]
+[c:/2020-0091/Vehiculos_20200091/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

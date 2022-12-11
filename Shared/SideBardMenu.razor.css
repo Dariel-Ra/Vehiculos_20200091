@@ -1,0 +1,149 @@
+*, *::after, *::before{
+   box-sizing: border-box; 
+   margin: 0;
+   padding: 0;
+}
+:root {
+    --clr-primary-400: #3333;
+    --clr-blue: #0d6efd;
+    --clr-indigo: #6610f2;
+    --clr-purple: #6f42c1;
+    --clr-pink: #d63384;
+    --clr-red: #dc3545;
+    --clr-orange: #fd7e14;
+    --clr-yellow: #ffc107;
+    --clr-green: #198754;
+    --clr-teal: #20c997;
+    --clr-cyan: #0dcaf0;
+    --clr-white: #fff;
+    --clr-gray: #6c757d;
+    --clr-gray-dark: #343a40;
+    --clr-gray-100: #f8f9fa;
+    --clr-gray-200: #e9ecef;
+    --clr-gray-300: #dee2e6;
+    --clr-gray-400: #ced4da;
+    --clr-gray-500: #adb5bd;
+    --clr-gray-600: #6c757d;
+    --clr-gray-700: #495057;
+    --clr-gray-800: #343a40;
+    --clr-gray-900: #212529;
+    --clr-primary: #0d6efd;
+    --clr-secondary: #6c757d;
+    --clr-success: #198754;
+    --clr-info: #0dcaf0;
+    --clr-warning: #ffc107;
+    --clr-danger: #dc3545;
+    --clr-light: #f8f9fa;
+    --clr-dark: #212529;
+}
+a {
+    text-decoration : none;
+    }
+.page{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-nav{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 12rem;
+    padding: 10px 14px;
+    
+    
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    outline: red solid 2px;
+}
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.primary-navigation > li{
+    list-style: none;
+    text-decoration: none;
+}
+.primary-nav-link{
+    text-decoration:none
+    
+}
+
+.oi {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    text-decoration: none;
+    top: -2px;
+    color: red;
+    text-decoration-color: blue;
+}
+
+.primary-nav-sidebard{
+    display: flex;
+    flex: 1;
+    list-style: none;
+    width: 10rem;
+}
+
+
+.primary-nav-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .primary-nav-item:first-of-type {
+        padding-top: 1rem;
+    }
+
+    .primary-nav-item:last-of-type {
+        padding-bottom: 1rem;
+    }
+
+    .primary-nav-item ::deep a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.primary-nav-item ::deep a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.primary-nav-item ::deep a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+main{
+    background-color: chocolate;
+    flex: 1;
+    height: 100vh;
+}
+
+@media (min-width: 641px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .side-nav {
+        width: 12rem;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+}
